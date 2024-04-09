@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+#RADIOBTNS-BARCONTAINER {
+text-align: center;
+}
+
+#RADIOBTNS-BARCONTAINER-Bar {
+	position: relative;
+	margin-top: 10px;
+}
+
+.RADIOBTNSP-Item {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.RADIOBTNSP-Legend {
+	font-size: 2em;
+	text-align: center;
+	color: greenyellow;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	height: fit-content;
+	display: none;
+}
+
+.RADIOBTNSP-On img,
+.RADIOBTNSP-Off img {
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	transform: scale(1);
+}
+
+.RADIOBTNSP-On:hover img,
+.RADIOBTNSP-Off:hover img {
+	transform: scale(0.9) translateY(-2px);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.RADIOBTNSP-On:active img,
+.RADIOBTNSP-Off:active img {
+	transform: scale(0.8) translateY(0);
+	box-shadow: none;
+}

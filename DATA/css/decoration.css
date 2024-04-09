@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+body {
+	height: 100%;
+	margin: 0;
+	color: #000;
+	font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	cursor: default;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+/* Add shadow for 3D effect */
+text-align: center;
+}
+
+h1 {
+	color: #ff704d;
+	font-size: 2em;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+	color: #b3e0ff;
+	font-size: 2em;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+h3 {
+	color: white;
+	font-size: 2em;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+h4 {
+	color: #cceeff;
+	font-size: 1.3em;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.highlight {
+	background-color: #ffcc99;
+}
+
+/* Couleurs des position dans résultats */
+.POS1 {
+	background-color: #3385ff;
+	/* bleu */
+	font-weight: 800;
+}
+
+.POS2 {
+	background-color: #ffffff;
+	font-weight: 800;
+}
+
+.POS3 {
+	background-color: #ff704d;
+	/*rouge clair */
+	font-weight: 600;
+}
+
+/* ============================*/
+/* =========================Style communs pour btns============================*/
+.btn {
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1.5em;
+}
+
+/* Additional styling for the button hover effect */
+.btn:hover {
+	background-color: #0056b3;
+}
+
+/* Style for when button receives focus */
+.btn:focus {
+	background-color: #cc3300;
+	/* Darker red */
+}
+
+.iconBtnImg32 {
+	width: 32px;
+	height: 32px;
+}
+
+.iconBtnImg32:hover {
+	transform: scale(1.5) translateY(-2px);
+}
+
+.iconBtnImg32:active {
+	transform: scale(1) translateY(0);
+}
+
+.iconBtnImg48 {
+	width: 48px;
+	height: 48px;
+}
+
+.iconBtnImg48:hover {
+	transform: scale(1.5) translateY(-2px);
+}
+
+.iconBtnImg48:active {
+	transform: scale(1) translateY(0);
+}
+
+.iconBtnImg80 {
+	width: 80px;
+	height: 80px;
+	animation: zoomInOut 1s 2, rotateOnSelf 1s linear;
+}
+
+.iconBtnImg80:hover {
+	transform: scale(1.5) translateY(-2px);
+}
+
+.iconBtnImg80:active {
+	transform: scale(1) translateY(0);
+}
+
+.gold-text {
+	font-size: 40px;
+	/* Adjust font size as needed */
+	color: #ffd700;
+	/* Gold color */
+	text-shadow: 2px 2px 0 #c0c0c0,
+		/* Light shadow */
+		4px 4px 0 #b0b0b0,
+		/* Lighter shadow */
+		6px 6px 0 #a0a0a0,
+		/* Even lighter shadow */
+		8px 8px 0 #808080,
+		/* Darker shadow */
+		10px 10px 0 #707070,
+		/* Even darker shadow */
+		12px 12px 0 #505050;
+	/* Darkest shadow */
+}
+
+/* Define the hover style using a class */
+.hover-effect {
+	transform: scale(1.5) translateY(-2px);
+}

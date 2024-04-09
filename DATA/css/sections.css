@@ -1,0 +1,1186 @@
+@charset "UTF-8";
+
+#DEBUT-DIV-CONTAINER {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: none;
+}
+#DEBUT-DIV {
+	position: relative;
+	margin: auto;
+	width: 80%;
+	height: 80%;
+	background-color: none;
+}
+
+#DEBUT-IMG-DIV-CONTAINER {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: none;
+}
+#DEBUT-IMG-DIV {
+	position: relative;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	background-color: none;
+}
+#DEBUT-1 {
+	position: absolute;
+	bottom: 220px;
+	right: 320px;
+	width: 80px;
+	height: 80px;
+  	animation: rotateOnSelf 0.4s linear 7;
+}
+#DEBUT-2 {
+	position: absolute;
+	bottom: 70px;
+	left: 180px;
+	width: 80px;
+	height: 80px;
+	animation: zoomInOutX2 0.5s linear 2;
+}
+#DEBUT-3 {
+	position: absolute;
+	bottom: 50px;
+	left: 300px;
+	width: 80px;
+	height: 80px;
+}
+#DEBUT-4 {
+	position: absolute;
+	bottom: 50px;
+	right: 200px;
+	width: 88px;
+	height: 88px;
+	animation: bounceGeneral 0.6s ease-in-out 12;
+}
+
+#DEBUT-DIV h1 {
+	padding: 20px;
+	text-align: center;
+font-size: 3em;
+}
+#DEBUT-DIV li {
+	padding: 10px;
+text-align: left;
+	color: #b3e0ff;
+	font-size: 2.2em;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+.DEBUT-NUM, .DEBUT-UNE {
+color: yellow;
+font-weight: 800;
+}
+#UFO-CONTAINER {
+	display: none;
+	position: absolute;
+	top: 100px;
+	left: -300px;
+	background-color: none;
+}
+
+#UFO-BUBBLE-CONTAINER {
+	position: relative;;
+	top: 0;
+	left: 50px;
+	background-color: none;
+	height: fit-content;
+}
+#UFO-LANDER {
+position:  absolute;;
+top: 100px;
+left: 0;
+}
+
+#BUBBLE-TEXT {
+	position:  relative;
+	width: 100px;
+	top: 55px;
+	left: 12px;
+font-size: 1em;
+text-align: center;
+	background-color: none;
+	z-index: 1001;
+}
+#BUBBLE-IMG {
+position:  relative;;
+top: 0;
+	left: 0;
+width: 120px;
+height: 90px;
+z-index: 1000;
+}
+
+#ufoFlying {
+	
+width: 128px;
+height: 128px;
+z-index: 1002;
+}
+
+/*      ================     */
+
+#INTRO-SECTION .BLOCK-TOP {
+	margin-bottom: 20px;
+}
+
+#INTRO-ROWS {
+	position: relative;
+	margin: auto;
+	width: 800px;
+	height: 280px;
+	background-color: none;
+}
+
+.INTRO-CONTAINER {
+	background-color: none;
+	 
+}
+#INTRO-1-TEXT h1 {
+	//padding-top: 60px;
+}
+#INTRO-2-TEXT h2 {
+	//padding-top: 40px;
+}
+
+#INTRO-2-TEXT,
+#INTRO-3-TEXT {
+	display: none;
+}
+
+#INTRO-1-TEXT,
+#INTRO-2-TEXT,
+#INTRO-3-TEXT {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/* padding: top right bottom left */
+	padding: 0 15px 0 15px;
+	border: 2px solid #2ecc71;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+	background-color: none;
+	 display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+}
+
+#INTRO-1-TEXT {
+	text-align: center;
+}
+
+#INTRO-2-TEXT,
+#INTRO-3-TEXT {
+	text-align: left;
+}
+
+#INTRO-BTNS {
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	z-index: 999;
+	background-color: none;
+}
+
+#TEST-TOURNOI {
+	display: none;
+	margin-right: 100px;
+}
+
+/* ======== INSCRIPTION ============================ */
+#INSCRIPTION-SECTION,
+#PARTIE-SECTION,
+#FIN-SECTION,
+#MANAGE-SECTION {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#TOOL-EXPORT {
+	position: absolute;
+	top: 110px;
+	right: 50px;
+	transform: translateX(-50%);
+	z-index: 9999;
+}
+
+.MAIN-COLS-INSCRIPTION {
+	background-color: none;
+	margin-top: 10px;
+	/* Distance from SAMPLE-TEXT-1 */
+	display: flex;
+	justify-content: space-between;
+	/* Adjust alignment as needed */
+}
+
+#INSCRIPTION-GAUCHE {
+	position: relative;
+	margin-right: 100px;
+	padding: 15px;
+	background-color: transparent;
+	width: 350px;
+	height: 370px;
+	margin-top: 35px;
+	border: 2px solid #9b59b6;
+	border-radius: 10px;
+	/* Rounded border */
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(155, 89, 182, 0.3);
+	/* Shadow effect */
+}
+
+#INSCRIPTION-DROITE {
+	position: relative;
+	padding: 20px;
+	height: fit-content;
+	margin-top: 35px;
+}
+
+#INSCRIPTION-DROITE-BOX {
+	width: 500px;
+	position: relative;
+	background-color: #006625;
+	border: 2px solid #13532e;
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+#INSCRIPTION-LISTE-HEADER {
+	width: 100%;
+	height: 20px;
+	display: flex;
+	/* Use flexbox */
+	padding: 0;
+	border-collapse: collapse;
+	cursor: pointer;
+	background-color: black;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	font-size: 16px;
+	color: white;
+	text-align: left;
+}
+
+#INSCRIPTION-BLOCK-HEADER1,
+#INSCRIPTION-BLOCK-HEADER2 p {
+	font-size: 16px;
+	color: white;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+}
+
+#INSCRIPTION-BLOCK-HEADER1 {
+	width: 20px;
+	margin-left: 5px;
+	margin-right: 15px;
+}
+
+#INSCRIPTION-BLOCK-HEADER2 {
+	width: fit-content;
+}
+
+#INSCRIPTION-LISTE-DIV {
+	width: 350px;
+	height: 350px;
+	background-color: transparent;
+	overflow: scroll;
+	overflow-y: auto;
+	/* Show vertical scrollbar when needed */
+	overflow-x: hidden;
+}
+
+#INSCRIPTION-LISTE-DIV h2 {
+	font-size: 1.5em;
+	text-align: center;
+	color: #ff704d;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+#INSCRIPTION-LISTE-DIV p {
+	font-size: 1.1em;
+	text-align: left;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	padding: 10px;
+	padding-bottom: 0;
+	line-height: 1;
+}
+
+#INSCRIPTION-LISTE-DIV p.hilite1 {
+	color: #ffa31a;
+	font-size: 1.3em;
+}
+
+#INSCRIPTION-LISTE-DIV p.hilite2 {
+	font-style: italic;
+	color: #ffffb3;
+}
+
+#INSCRIPTION-LISTE-DIV h4 {
+	font-size: 1em;
+	text-align: left;
+	font-style: italic;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	padding: 0;
+	padding-bottom: 0;
+}
+
+#INSCRIPTION-LISTE-TABLE-ID {
+	width: 100%;
+	border-collapse: collapse;
+	cursor: pointer;
+	background-color: white;
+	text-align: left;
+}
+
+#INSCRIPTION-LISTE-TABLE-ID td {
+	padding: 2px;
+	text-align: left;
+}
+
+#INSCRIPTION-LISTE-TABLE-ID td:nth-child(1) {
+	/*background-color: #e6ffcc;*/
+	width: 30px;
+}
+
+#INSCRIPTION-LISTE-TABLE-ID tr:nth-child(even) {
+	background-color: yellow;
+	/* Change color for even rows */
+}
+
+/* reglages des 3 colonnes */
+#INSCRIPTION-LISTE-TABLE-ID td:nth-child(1),
+#INSCRIPTION-LISTE-TABLE-ID td:nth-child(2),
+#INSCRIPTION-LISTE-TABLE-ID td:nth-child(3) {}
+
+#INSCRIPTION-DROITE {}
+
+#INSCRIPTION-CHECK {
+	position: absolute;
+	top: 50px;
+	right: 20px;
+	padding: 10px;
+	background-color: transparent;
+	width: 30px;
+	height: 30px;
+}
+
+#INSCRIPTION-CHECK .checkImg {
+	width: 30px;
+	height: 30px;
+}
+
+#INSCRIPTION-BTNS {
+	display: flex;
+	/* Use flexbox */
+	flex-direction: column;
+	/* Stack items vertically */
+	align-items: center;
+	/* Center items horizontally */
+	margin-top: 50px;
+	background-color: transparent;
+}
+
+#construitTournoi-off {
+	width: 80px;
+	height: 80px;
+}
+
+#TeamRegister {
+	position: relative;
+}
+
+#TeamRegister legend h2 {
+	font-size: 1.7em;
+	text-align: center;
+	color: #ff704d;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+
+#enterTeamNum {
+	color: #ffff66;
+	font-size: 1.5em;
+	font-weight: bold
+}
+
+#TeamRegister label {
+	font-weight: 900;
+	color: white;
+	margin-bottom: 10px;
+	font-size: 1.5em;
+}
+
+#TeamRegister input[type="text"] {
+	padding: 10px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 1.5em;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	background-color: #fff;
+	color: #333;
+	font-weight: 600;
+	transition: border-color 0.3s ease;
+	width: 400px;
+}
+
+#TeamRegister input[type="text"]:hover {
+	border-color: #3498db;
+}
+
+/* Effet de focus */
+#TeamRegister input[type="text"]:focus {
+	border-color: #3498db;
+	box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+#PARTIE-BLOCK-TOP {
+	height: fit-content;
+	width: 50%;
+	align-items: center;
+}
+
+/* ======== PARTIE ============================ */
+.MAIN-COLS-PARTIE {
+	margin-top: 30px;
+	/* Distance from SAMPLE-TEXT-1 */
+	display: flex;
+	justify-content: space-between;
+	/* Adjust alignment as needed */
+}
+
+/* POSITIONS */
+#PARTIE-GAUCHE {
+	position: relative;
+	margin-left: 80px;
+	width: fit-content;
+	max-height: 360px;
+	height: fit-content;
+}
+
+#PARTIE-CENTRE {
+	position: relative;
+	display flex;
+	flex-direction: column;
+	margin-top: 50px;
+	width: 250px;
+	height: 200px;
+	margin-left: 120px;
+	margin-right: 100px;
+}
+
+#PARTIE-DROITE {
+	position: relative;
+	margin-top: 20px;
+	width: 350px;
+	height: 320px;
+}
+
+#PARTIE-HELP-ON,
+#PARTIE-HELP-OFF {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#PARTIE-FIN {
+	position: relative;
+width: fit-content;
+height: fit-content;
+}
+#PARTIE-FIN:hover {
+	transform: scale(2) translateY(-2px);
+}
+#PARTIE-FIN:active {
+	transform: scale(1) translateY(0);
+}
+
+#PARTIE-FIN-img {
+width: 80px;
+	height: 80px;
+}
+/*
+#PARTIE-NEXT {
+	display: none;
+	position: relative;
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#PARTIE-CONTINUE {
+	width: 80px;
+	height: 80px;
+}
+*/
+#PARTIE-HELP-OFF {
+	display: none;
+	margin-top: 20px;
+	width: 350px;
+	height: 320px;
+	cursor: default;
+}
+
+#PARTIE-HELP-ON {
+	margin-top: 20px;
+	margin-right: 120px;
+	width: 350px;
+	height: 315px;
+	cursor: default;
+}
+
+#PARTIE-STATUS {
+	width: fit-content;
+	height: fit-content;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+#PARTIE-RESTE {
+	font-size: 1.5em;
+	text-align: center;
+	color: white;
+	/* Text color */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	/* Shadow to create depth */
+	padding: 0;
+}
+
+#PARTIE-HELP-OFF {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#PARTIE-HELP-OFF-btn-CONTAINER {
+	display flex;
+	flex-direction: column;
+}
+
+#PARTIE-HELP-ON-btn {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	width: fit-content;
+	height: fit-content;
+}
+
+#PARTIE-HELP-ON-btn img {
+	width: 48px;
+	height: 48px;
+}
+
+#PARTIE-HELP-OFF-IMG {}
+
+#PARTIE-HELP-OFF-btn {
+	width: fit-content;
+	height: fit-content;
+}
+
+#PARTIE-HELP-OFF-btn img {
+	width: 80px;
+	height: 80px;
+}
+
+#PARTIE-HELP-coolOFF-btn {
+	width: fit-content;
+	height: fit-content;}
+
+#PARTIE-HELP-coolOFF-btn img {
+	width: 50px;
+	height: 50px;
+}
+
+#PARTIE-HELP-ON {
+	background-color: #ffffb3;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#PARTIE-HELP-ON-titre {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	background-color: #996600;
+}
+
+.helpTitre {
+	font-size: 1.5em;
+	text-align: center;
+	color: #ffffb3;
+	/* Text color */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+#PARTIE-HELP-ON-ol {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: auto;
+}
+
+.helpText-ol {
+	top: 0;
+	padding: 0;
+	padding-left: 20px;
+	font-size: 1em;
+	color: black;
+	line-height: 1.4;
+	
+}
+.confirmScore {
+	font-weight: 800;
+	color: #86592d;
+	font-size: 1.1em;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	
+}
+
+#PARTIE-CONTINUE:hover {
+	transform: scale(1.5) translateY(-2px);
+}
+
+#PARTIE-CONTINUE:active {
+	transform: scale(1) translateY(0);
+}
+
+#COMMENCE-PARTIE-btn {
+	margin-left: 80px;
+}
+
+#PARTIE-FONTS-UP-btn {
+	margin-left: 80px;
+}
+
+#myScoresPartie {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	background-color: #6699ff;
+	text-align: center;
+	z-index: 9999;
+	width: fit-content;
+}
+
+#editScore {
+	cursor: default;
+	padding: 20px;
+}
+
+#EQUIPEA {
+	margin-bottom: 15px;
+}
+
+#EQUIPEA-H1 {
+	text-align: left;
+	color: blue;
+	font-size: 1.7em;
+	width: 100%;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+#EQUIPEB-H1 {
+	text-align: left;
+	color: #990000;
+	font-size: 1.5em;
+	width: 100%;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+#EQUIPEA-INPUT,
+#EQUIPEB-INPUT {
+	margin-left: 10px;
+	width: 50%;
+	height: 40px;
+	font-size: 1.5em;
+}
+
+#EQUIPEA-INPUT {
+	color: blue;
+}
+
+#EQUIPEB-INPUT {
+	color: red;
+	background-color: lightblue;
+}
+
+/* ===================== */
+/* DIV qui couvre les scores */
+#myScoresPartieCover {
+	display: none;
+	width: 250px;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	/* Horizontally center */
+	align-items: center;
+	/* Vertically center */
+	/* height: 100vh;Full height of the viewport */
+}
+
+#myScoresPartieCover img {
+	width: 250px;
+	height: 250px;
+}
+
+#scoreEquipeB {}
+
+/* Styling for when the input field is focused */
+#scoreEquipeA,
+#scoreEquipeB :focus {
+	border: 2px:
+		/* Change border color */
+		border-color: #007bff;
+	/* Add box shadow */
+	box-shadow: 0 0 5px #007bff;
+}
+
+#PARTIE-FONTS-CONTAINER {
+	display: flex;
+	justify-content: center;
+	flex-direction: cols;
+	align-content: center;
+	width: fit-content;
+	height: fit-content;
+	margin-bottom: 0;
+	margin-left: 320px;
+}
+
+#PARTIE-START {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+/* =================================*/
+/* SECTION RESULTATS-SECTION-PROJ */
+/* =================================*/
+#RESULTATS-BLOCK-PROJ {
+	/*display: none;*/
+	display: flex;
+	flex-direction: column;
+	/* Arrange children in a column */
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	background-color: #006625;
+	padding: 30px;
+}
+
+#SCORES-FONTS-CONTAINER {
+	display: flex;
+	flex-direction: row;
+	width: 100px;
+	height: 40px;
+	margin-top: 5px;
+	margin-left: 80%;
+	background-color: none;
+}
+
+#FONTS-UP {
+	margin-right: 10px;
+}
+
+#FONTS-DOWN {}
+
+.fontChange {
+	width: 32px;
+	height: 32px;
+}
+
+.fontChange:hover {
+	transform: scale(1.3) translateY(-2px);
+}
+
+.fontChange:active {
+	transform: scale(1) translateY(0);
+}
+
+#RESULTATS-TABLEAU-HEADER-PROJ {
+	width: 90%;
+	height: 20px;
+	display: flex;
+	/* Use flexbox */
+	flex-direction: row;
+	/* Stack items vertically */
+	/* align-items: center; */
+	/* Center items horizontally */
+	padding: 0;
+	border-collapse: collapse;
+	cursor: pointer;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	font-size: 1em;
+	text-align: left;
+	background-color: #996600;
+	color: #ffcc66;
+}
+
+#RESULTATS-BLOCK-HEADER1-PROJ {
+	width: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#RESULTATS-BLOCK-HEADER2-PROJ {
+	width: fit-content;
+	margin-right: 360px;
+}
+
+#RESULTATS-BLOCK-HEADER3-PROJ {
+	width: fit-content;
+	margin-right: 70px;
+}
+
+#RESULTATS-BLOCK-HEADER4-PROJ {
+	width: fit-content;
+	margin-right: 70px;
+}
+
+#RESULTATS-BLOCK-HEADER5-PROJ {
+	margin-right: 60px;
+	width: fit-content;
+}
+
+#RESULTATS-BLOCK-HEADER6-PROJ {
+	margin-right: 70px;
+	width: fit-content;
+}
+
+#RESULTATS-BLOCK-HEADER7-PROJ {
+	margin-right: 85px;
+	width: fit-content;
+}
+
+#RESULTATS-BLOCK-HEADER8-PROJ {
+	width: fit-content;
+}
+
+/* div qui recçoit le tableau avec toutes les donnees scrollable */
+#RESULTATS-TABLEAU-DIV-PROJ {
+	width: 90%;
+	height: calc(100vh - 150px);
+	overflow: auto;
+	/* Enable scrolling */
+	overflow-x: hidden;
+	overflow-y: auto;
+	/* Enable vertical scrolling if needed */
+	background-color: wheat;
+	font-size: 1em;
+}
+
+#SCORES-PROJ {
+	width: 100%;
+	height: calc(100vh - 150px);
+	cursor: pointer;
+	font-size: 1em;
+	background-color: #e6ffcc;
+	text-align: center;
+	border-collapse: collapse;
+	/* Added for consistent border rendering */
+}
+
+/* Default styling for even rows */
+#SCORES-PROJ tr.even {
+	background-color: #ffffcc;
+	/* Light yellow background */
+}
+
+/* Default styling for odd rows */
+#SCORES-PROJ tr.odd {
+	/*background-color: #ffffff;*/
+}
+
+/* Additional styling for special-even rows */
+#SCORES-PROJ tr.special-even {
+	/* font-weight: bold;  */
+}
+
+/* Additional styling for special-odd rows */
+#SCORES-PROJ tr.special-odd {
+	/* font-style: italic; */
+}
+
+#SCORES-PROJ tr:hover {
+	background-color: #b3c6ff;
+}
+
+#SCORES-PROJ td,
+#SCORES-PROJ th {
+	/* Apply styles to both table cells and header cells */
+	padding: 2px;
+	border: 1px solid black;
+	/* Add border to all cells */
+}
+
+/* Controle toutes les col des 2 tables ensemble */
+#SCORES-PROJ td:nth-child(1) {
+	width: 3%;
+}
+
+#SCORES-PROJ td:nth-child(2) {
+	width: 32%;
+	text-align: left;
+}
+
+#SCORES-PROJ td:nth-child(3),
+#SCORES-PROJ td:nth-child(4),
+#SCORES-PROJ td:nth-child(5),
+#SCORES-PROJ td:nth-child(6),
+#SCORES-PROJ td:nth-child(7),
+#SCORES-PROJ td:nth-child(8) {
+	width: 10%;
+	text-align: center;
+}
+
+#SCORES-PROJ th:nth-child(1),
+#SCORES-PROJ th:nth-child(2),
+#SCORES-PROJ th:nth-child(3) {
+	/* Add your styles here */
+}
+
+/* ========================================== */
+/* FIN section */
+/* ========================================== */
+#FIN-TEXT-CONTAINER {
+	position: relative;
+	padding: 30px;
+	width: 850px;
+	height: 250px;
+	border: 2px solid #2ecc71;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+	background-color: none;
+}
+
+#FIN-TEXT {
+	position: relative;
+	/* Add this line */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
+#FIN-TEXT h2 {
+	font-size: 1.6em;
+	text-align: center;
+	color: #b3e0ff;
+	/* Text color */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	padding-bottom: 10px;
+}
+
+#FIN-TEXT h3 {
+	font-size: 1.5em;
+	text-align: center;
+	color: white;
+	/* Text color */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	padding-bottom: 10px;
+}
+
+#FIN-TEXT h1 {
+	font-size: 1.6em;
+	text-align: center;
+	color: #ff704d;
+	/* Text color */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	padding-bottom: 10px;
+}
+
+#FIN-BTNS {}
+
+#FIN-SMILE {
+	position: absolute;
+	top: 25px;
+	right: 30px;
+}
+
+#FIN-SMILE img {
+	width: 128px;
+	height: 128px;
+}
+
+#FIN-SMILE-ALERT {
+	position: absolute;
+	top: 25px;
+	left: 30px;
+}
+
+#FIN-SMILE,
+#FIN-SMILE-ALERT img {
+	width: 128px;
+	height: 128px;
+}
+
+#FIN-SMILE-ALERT :hover {
+	transform: scale(2) translateY(-2px);
+	/*animation: zoomInOutMax 1s 2, rotateOnSelfMax 1s linear;*/
+}
+
+#FIN-SMILE :hover {
+	transform: scale(2) translateY(-2px);
+	//animation: rotateOnSelfMax 1s linear 3;
+}
+
+#FIN-SMILE,
+#FIN-SMILE-ALERT:active {
+	transform: scale(1) translateY(0);
+	animation: none;
+}
+
+/* ========================================== */
+/* outils section */
+/* ========================================== */
+#MANAGE-TITRE {}
+
+#MANAGE-BLOCK-TOP h2 {
+	color: #99ff33;
+	font-size: 1.7em;
+}
+
+#MAIN-ROWS-MANAGE {
+	display: flex;
+}
+
+#MANAGE-INTRO {
+	width: 800px;
+	padding: 15px;
+	height: fit-content;
+	text-align: left;
+	/* green-border */
+}
+
+#MANAGE-INTRO p {
+	font-size: 1.3em;
+	text-align: left;
+	color: white;
+	padding: 0;
+}
+
+#MANAGE-TEXT {
+	display: flex;
+	flex-direction: row;
+	/* Arrange children in a column */
+	align-items: center;
+}
+
+#MANAGE-DATA {
+	background-color: none;
+	display: flex;
+}
+
+#MANAGE-EXPORT {
+	background-color: none;
+	margin-left: 250px;
+	margin-right: 30px;
+	width: fit-content;
+	height: 320px;
+	text-align: left;
+	border: 2px solid #2ecc71;
+	border-radius: 10px;
+	padding: 10px;
+	padding-bottom: 30px;
+	box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+#XML-DATA-CONTAINER {
+	background-color: none;
+	width: 400px;
+	margin-right: 200px;
+	margin-top: 20px;
+}
+
+#MANAGE-EXPORT span {
+	color: #e63900;
+}
+
+#MANAGE-EXPORT h3 {
+	font-size: 1.3em;
+	text-align: left;
+	color: #8080ff;
+	padding: 0;
+}
+
+#MANAGE-EXPORT ol {
+	padding-top: 0;
+	font-size: 1em;
+	text-align: left;
+	color: white;
+	padding-left: 30px;
+	line-height: 1.2;
+}
+
+#XML-DATA-EXPORT {
+	margin-right: 260px;
+}
+
+#XML-DATA-IMPORT {
+	margin-right: 260px;
+}
+
+#XML-CONTENU-EXPORT {
+	width: 300px;
+	height: 120px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	resize: none;
+	/* Disable textarea resizing */
+	font-family: Arial, sans-serif;
+	/* Optional: Change font family */
+	font-size: 14px;
+	/* Optional: Change font size */
+	background-color: #9999ff;
+}
+
+#XML-CONTENU-IMPORT {
+	width: 300px;
+	height: 120px;
+	margin-top: 60px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	resize: none;
+	/* Disable textarea resizing */
+	font-family: Arial, sans-serif;
+	/* Optional: Change font family */
+	font-size: 14px;
+	/* Optional: Change font size */
+	background-color: #ff794d;
+}
+
+#XML-DATA-BTNS-CONTAINER {
+	display: flex;
+	flex-direction: column;
+	background-color: none;
+	margin-top: 100px;
+	margin-right: 10px;
+}
+
+#XML-COPIE {
+	margin-bottom: 140px;
+}
+
+#XML-COLLE {}
+
+#XML-IMPORTE {}

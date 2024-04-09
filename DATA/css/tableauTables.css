@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+/* CSS Styles */
+/* Scrollable tbody */
+/* TABLE POUR PROJETER LA PARTIE DES TABLES */
+#TABLEAU-CONTAINER-PROJ {
+margin-left: auto;
+margin-right: auto;
+  display: flex;
+  flex-direction: column; /* Align items in a column */
+	width: fit-content;
+	height: 100%;
+	background-color: none;
+}
+
+#TABLEAU-HEADER-TITRE-PROJ {
+background-color: none;
+margin-left: auto;
+margin-right: auto;
+}
+#TABLEAU-HEADER-TITRE-PROJ h1{
+ color: yellow;
+ font-size: 3em;
+}
+#TABLEAU-HEADER-DIV-PROJ {
+	
+	width: 400px;
+	height: 30px;
+	display: flex;
+	/* Use flexbox */
+	flex-direction: row;
+	/* Stack items vertically */
+	/* align-items: center; */
+	/* Center items horizontally */
+	padding: 0;
+	border-collapse: collapse;
+	cursor: default;
+	background-color: red;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	font-size: 1.2em;
+}
+
+/* Table ID de la table qui reçoit header  */
+#PARTIE-TABLE-HEADER-PROJ {
+	background-color: #996600;
+	font-size: 1.2em;
+	color: #ffcc66;
+	width: 400px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	/* Add a bottom border */
+	border-top-left-radius: 8px;
+	/* Round corner top left */
+	border-top-right-radius: 8px;
+	/* Round corner top right */
+}
+
+#PARTIE-TABLE-HEADER-PROJ th {
+	width: 70px;
+}
+
+/* reglages des 3 colonnes */
+#PARTIE-TABLEAU-HEADER-PROJ th:nth-child(1),
+#PARTIE-TABLEAU-HEADER-PROJ th:nth-child(2),
+#PARTIE-TABLEAU-HEADER-PROJ th:nth-child(3) {}
+
+/* div qui recçoit le tableau avec toutes les donnees scrollable */
+#TABLEAU-TABLES-SCROLL-PROJ {
+	width: 400px;
+	height: 82%;
+	overflow: auto;
+	/* Enable scrolling */
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: none;
+	/* Enable vertical scrolling if needed */
+}
+
+/* TABLE qui contient les données */
+#PARTIE-TABLEAU-PROJ {
+	margin-left: auto;
+	width: 400px;
+	height: 82%;
+	max-height: 83%;
+	border-collapse: collapse;
+	font-size: 1.2em;
+	text-align: center;
+	background-color: #ffffe6;
+	cursor: default;
+}
+
+#PARTIE-TABLEAU-PROJ td {
+	width: 70px;
+}
+
+#PARTIE-TABLEAU-PROJ tr {
+	height: fit-content;
+	padding: 0;
+}
+
+#PARTIE-TABLEAU-PROJ td:nth-child(1) {
+	/*background-color: #e6ffcc;*/
+}
+
+/* reglages des 3 colonnes */
+#PARTIE-TABLEAU-PROJ td:nth-child(1),
+#PARTIE-TABLEAU-PROJ td:nth-child(2),
+#PARTIE-TABLEAU-PROJ td:nth-child(3) {}
+
+#PARTIE-TABLEAU-PROJ-cell:nth-child(1) {
+	background-color: #e6ffcc;
+}
+
+#PARTIE-TABLEAU-PROJ-cell:nth-child(2) {}
+
+#PARTIE-TABLEAU-PROJ-cell:nth-child(3) {}
+
+/* reglages des 3 lignes */
+.PARTIE-TABLEAU-PROJ-row {}
+
+.PARTIE-TABLEAU-PROJ-row-even {}
+
+.PARTIE-TABLEAU-PROJ-row-odd {
+	background-color: #ccccff;
+}
+
+.PARTIE-TABLEAU-PROJ-row-hover {
+	background-color: #ff531a;
+	cursor: pointer;
+	/* Change cursor on hover */
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+	/* Increase shadow on hover */
+}
+
+/* TABLE POUR ENTRER LES SCORES */
+/* Div qui contient le tableau */
+#PARTIE-TABLEAU-CONTAINER {
+	max-height: 380px;
+	/* Set maximum height for the container */
+	overflow-y: auto;
+	/* Enable vertical scrolling */
+}
+
+/* Div qui reçoit la table avec the 1ere ligne: th */
+#PARTIE-TABLEAU-HEADER-DIV {
+	width: 250px;
+}
+
+/* Table ID de la table qui reçoit header  */
+#PARTIE-TABLE-HEADER {
+	background-color: #996600;
+	font-size: 18px;
+	color: #ffcc66;
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	/* Add a bottom border */
+	border-top-left-radius: 8px;
+	/* Round corner top left */
+	border-top-right-radius: 8px;
+	/* Round corner top right */
+}
+
+#PARTIE-TABLE-HEADER th {
+	width: 70px;
+}
+
+/* reglages des 3 colonnes */
+#PARTIE-TABLEAU-HEADER th:nth-child(1),
+#PARTIE-TABLEAU-HEADER th:nth-child(2),
+#PARTIE-TABLEAU-HEADER th:nth-child(3) {}
+
+/* div qui recçoit le tableau avec toutes les donnees scrollable */
+#TABLEAU-TABLES-SCROLL {
+	width: 250px;
+	max-height: 350px;
+	height: fit-content;
+	overflow: auto;
+	/* Enable scrolling */
+	overflow-x: hidden;
+	overflow-y: auto;
+	/* Enable vertical scrolling if needed */
+}
+
+/* TABLE qui contient les données */
+#PARTIE-TABLEAU {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 18px;
+	text-align: center;
+	background-color: #ffffe6;
+	cursor: default;
+}
+
+#PARTIE-TABLEAU td {
+	width: 70px;
+}
+
+#PARTIE-TABLEAU td:nth-child(1) {
+	/*background-color: #e6ffcc;*/
+}
+
+/* reglages des 3 colonnes */
+#PARTIE-TABLEAU td:nth-child(1),
+#PARTIE-TABLEAU td:nth-child(2),
+#PARTIE-TABLEAU td:nth-child(3) {}
+
+#PARTIE-TABLEAU-cell:nth-child(1) {
+	background-color: #e6ffcc;
+}
+
+#PARTIE-TABLEAU-cell:nth-child(2) {}
+
+#PARTIE-TABLEAU-cell:nth-child(3) {}
+
+/* reglages des 3 lignes */
+.PARTIE-TABLEAU-row {}
+
+.PARTIE-TABLEAU-row-even {}
+
+.PARTIE-TABLEAU-row-odd {
+	background-color: #ccccff;
+}
+
+.PARTIE-TABLEAU-row-hover {
+	background-color: #ff531a;
+	cursor: pointer;
+	/* Change cursor on hover */
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+	/* Increase shadow on hover */
+}
+
+/* Apply zoom effect on hover */
+.zoom-effect:hover {
+	transform: scale(1.1);
+	/* Increase scale on hover */
+	transition: transform 0.3s ease;
+	/* Smooth transition */
+}
+
+/* Apply 3D border shadow */
+.box-shadow {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	/* 3D border shadow */
+	transition: box-shadow 0.3s ease;
+	/* Smooth transition */
+}
+
+/* Apply both zoom effect and 3D border shadow */
+.zoom-effect:hover .box-shadow {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+	/* Increase shadow on hover */
+}
+
+.PARTIE-TABLEAU-row-selected {}
+
+/* Styling for table cells */
+.PARTIE-TABLEAU-cell {
+	border: 1px solid #ccc;
+	padding: 2px;
+	user-select: none;
+	/* Prevent text selection */
+}

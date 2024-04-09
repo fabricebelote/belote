@@ -1,0 +1,286 @@
+/* BLOCKS clicking behind popup */
+.myMsgeBox-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: red;
+	/*rgba(0, 0, 0, 0.5);*/
+	/* Semi-transparent black overlay */
+	z-index: 99898;
+	/* Ensure the overlay is above other content */
+}
+
+/* ===========================================
+COMMON to the 3 modals 
+============================================*/
+/* Modal Structure */
+.myMsgeBox-modal {
+	position: fixed;
+	z-index: 99999;
+	left: 30%;
+	top: 25%;
+	min-width: 400px;
+	/* Set a minimum width */
+	max-width: 500px;
+	/* Maximum width */
+	width: fit-content;
+	/* Adjusted to fit content */
+	height: fit-content;
+	/* Adjusted to fit content */
+	max-height: 80vh;
+	/* Maximum height */
+	background-color: red;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+/* Content Structure */
+.myMsgeBox-content {
+	display: relative;
+	background-color: #ffffcc;
+	border: 1px solid #888;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: left;
+	padding: 10px;
+	/* Added */
+	padding-top: 30px;
+	/* Adjusted */
+}
+
+/* Titre Container */
+.myMsgeBox-titre-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	/* Adjusted to span the entire width */
+	height: 40px;
+	background-color: black;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	display: flex;
+}
+
+.myMsgeBox-titre {
+	padding-left: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	color: yellow;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/* Added ellipsis for overflow */
+	white-space: nowrap;
+	/* Prevent wrapping */
+}
+
+.myMsgeBox-IMG-MSGE-container {
+	display: flex;
+	align-items: center;
+	/* Center items vertically */
+	background-color: transparent;
+	padding-top: 10px;
+}
+
+.myMsgeBox-IMG-container {
+	width: fit-content;
+	animation: zoomInOutX2 1s 2;
+	/* Added animation */
+	padding-right: 10px;
+}
+
+.myMsgeBox-image {
+	width: 60px;
+	height: 60px;
+}
+
+.myMsgeBox-msg-container {
+	;
+}
+
+.myMsgeBox-msg-H3 {
+	color: black;
+	text-align: left;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+/* ===========================================
+BOUTONS ALERT - 1 bouton
+============================================*/
+.myMsgeBox-btns-container-Alert {
+	display: flex;
+	justify-content: center;
+	/* horizontally center */
+	margin-top: 1px;
+	width: 100%;
+	background-color: none;
+	margin-bottom: 10px;
+}
+
+.myMsgeBox-btn1-Alert {
+	/* Remove min-width */
+	cursor: pointer;
+	font-size: 16px;
+	border: none;
+	border-radius: 4px;
+	background-color: #007bff;
+	color: #fff;
+	opacity: 0.8;
+	margin-left: auto;
+	margin-right: 50px;
+	width: fit-content;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.myMsgeBox-btn2-Alert {}
+
+/* ===========================================
+BOUTONS AUTRES
+============================================*/
+.myMsgeBox-btns-container {
+	display: flex;
+	justify-content: center;
+	/* horizontally center */
+	align-items: center;
+	/* vertically center */
+	margin-top: 10px;
+	width: 100%;
+	background-color: none;
+	margin-bottom: 10px;
+}
+
+.myMsgeBox-btn1,
+.myMsgeBox-btn2 {
+	/* Remove min-width */
+	width: fit-content;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	cursor: pointer;
+	font-size: 16px;
+	border: none;
+	border-radius: 4px;
+	background-color: #007bff;
+	color: #fff;
+	margin: 0 5px;
+	/* Equal space between buttons */
+}
+
+.myMsgeBox-btn2 {
+	outline: 5px solid blue;
+	z-index: 9999;
+	margin-right: auto;
+}
+
+.myMsgeBox-btn1 {
+	margin-left: auto;
+}
+
+/* Button Hover */
+.myMsgeBox-btn1:hover,
+.myMsgeBox-btn2:hover {
+	opacity: 0.8;
+}
+
+/* ===========================================
+SCORES A LA TABLE - SCORE - CONFIRM  
+============================================*/
+.modalScore {
+	min-width: 500px;
+	/* Set a minimum width */
+	max-width: 650px;
+}
+.myMsgeBox-msgScore-H3 {
+	color: black;
+	text-align: left;
+	font-size: 1.5em;
+	font-weight: 400;
+}
+.myMsgeBox-scoreContainer {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 4px solid #006625;
+	border-radius: 10px;
+	padding: 15px;	
+}
+
+.myMsgeBox-scoreEquipe1,
+.myMsgeBox-scoreEquipe2 {
+	text-align: center;
+	margin-left: 40px;
+	margin-right: 40px;
+	white-space: nowrap;
+}
+
+.myMsgeBox-scoreLabelEq1,
+.myMsgeBox-scoreLabelEq2 {
+text-align: center;
+}
+
+.myMsgeBox-scoreLabelEq1,
+.myMsgeBox-scoreLabelSc1 {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: blue;
+	font-size: 1.5em;
+	padding-bottom: 0;
+}
+
+.myMsgeBox-scoreLabelEq2,
+.myMsgeBox-scoreLabelSc2 {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: red;
+	font-size: 1.5em;
+	padding-bottom: 0;
+}
+
+#myMsgeBox-approuveContainer {
+	background-color: red;
+}
+.myMsgeBox-msgScores-H3 {
+	color: black;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 800;
+	animation: zoomInOutX15 1s 1;
+}
+
+
+.myMsgeBox-scoreLabelEq1,
+.myMsgeBox-scoreLabelEq2 {
+text-align: center;
+}
+
+/* ===========================================
+INPUT
+============================================*/
+.myMsgeBox-input-container {
+	margin-top: 5px;
+	;
+	margin-bottom: 20px;
+}
+
+.myMsgeBox-input {
+	width: calc(100% - 10px);
+	padding: 10px;
+	color: red;
+	font-weight: 800;
+	font-size: 1.2em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+

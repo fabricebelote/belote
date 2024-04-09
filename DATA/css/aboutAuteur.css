@@ -1,0 +1,132 @@
+/* Modal Container */
+.Auteur-modal {
+	position: fixed;
+	z-index: 99999;
+	left: 35%;
+	top: 15%;
+	width: 450px;
+	/* Adjusted to fit content */
+	height: fit-content;
+	/* Adjusted to fit content */
+	max-height: 80vh;
+	/* Maximum height */
+	background-color: none;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+/* Modal Content */
+.Auteur-content {
+	display: relative;
+	background-color: #cccccc;
+	border: 1px solid #888;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: left;
+	padding: 10px;
+	/* Added */
+	padding-top: 30px;
+	/* Adjusted */
+}
+
+/* Titre Container */
+.Auteur-titre-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	/* Adjusted to span the entire width */
+	height: 40px;
+	background-color: black;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	display: flex;
+}
+
+.Auteur-titre {
+	padding-left: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	color: yellow;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/* Added ellipsis for overflow */
+	white-space: nowrap;
+	/* Prevent wrapping */
+}
+
+.Auteur-container {
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+/* Author Name */
+#Auteur-NOM {
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #006625;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	padding-bottom: 5px;
+}
+
+/* Author Email */
+#Auteur-EMAIL {
+	font-size: 1.2em;
+	color: #996600;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+
+}
+
+/* Text Container */
+.Auteur-text-container {
+	margin-top: 20px;
+}
+
+
+ #Auteur-TEXT-3 {
+font-style: italic;
+font-size: 1em;
+}
+#Auteur-TEXT-1, #Auteur-TEXT-2, #Auteur-TEXT-3 {
+text-align: left;
+	color: #000000;
+	padding-bottom: 15px;
+}
+#Auteur-TEXT-1, #Auteur-TEXT-2 {
+font-size: 1.2em;
+}	
+.Auteur-IMG-container {
+	text-align: center;
+}
+
+.Auteur-image {
+	width: 50px;
+	height: 50px;
+	padding-bottom: 5px;
+}
+
+/* Date Section */
+#Auteur-DATE {
+	font-size: 1.2em;
+	color: #996600;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	text-align: center;
+	padding-bottom: 5px;	
+}
+
+/* Buttons Container */
+.Auteur-btns-container {
+	display: flex;
+	justify-content: center;
+}
+
+/* Button */
+.Auteur-btn1 {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-top: 10px;
+}

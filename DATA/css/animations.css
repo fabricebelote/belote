@@ -1,0 +1,222 @@
+#PIQUE,
+#COEUR,
+#TREFLE,
+#CARREAU {
+ animation: zoomInOutX2 0.8s linear 2;
+}
+
+.UFO-action {
+	display: block;
+	animation-name: ufoCross;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+}
+
+.returnAnimation {
+    animation-name: ufoReturn;
+    animation-duration: 3s; /* Adjust duration as needed */
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.ufoPARTIEAction {
+    animation-name: flipDown;
+    animation-duration: 0.5s; 
+    animation-timing-function: linear;
+ 	animation-iteration-count: 6;
+    animation-fill-mode: forwards; /* Keeps the element in its final state after animation */
+}
+.ufoFlyingAction {
+	animation-name: zoomInOutX25;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+}
+
+.generalAction {
+  animation-name: bounceGeneral; /* Name of the keyframe animation */
+  animation-duration: 0.5s; /* Duration of the animation */
+  animation-timing-function: ease-in-out; /* Timing function */
+  animation-iteration-count: infinite; /* Repeat the animation infinitely */
+}
+
+
+.animateCorner {
+    animation: zoomAndRotate 1s linear 4;
+}
+
+.animateCorner-action {
+	 animation: rotateAndZoom 1s linear 2;
+}
+.DEBUT-action {
+	animation-name: zoomInOutX4;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: 3;
+}
+
+#ECRAN-PROJECTEUR {
+	animation-name: openZoom;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	/* Include vendor prefixes if necessary */
+	-webkit-animation-name: openZoom;
+	-moz-animation-name: openZoom;
+	-o-animation-name: openZoom;
+	-ms-animation-name: openZoom;
+	/* Add more vendor prefixes as needed */
+}
+
+.pleinEcran {
+	animation-name: openZoom;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	/* Include vendor prefixes if necessary */
+	-webkit-animation-name: openZoom;
+	-moz-animation-name: openZoom;
+	-o-animation-name: openZoom;
+	-ms-animation-name: openZoom;
+	/* Add more vendor prefixes as needed */
+}
+
+.INTRO-TEXT {
+	animation-name: openFlipRight;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	/* Include vendor prefixes if necessary */
+	-webkit-animation-name: openFlipRight;
+	-moz-animation-name: openFlipRight;
+	-o-animation-name: openFlipRight;
+	-ms-animation-name: openFlipRight;
+	/* Add more vendor prefixes as needed */
+}
+
+#INTRO-1-TEXT,
+#INTRO-2-TEXT,
+#INTRO-3-TEXT {
+	animation-name: openFlipRight;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	/* Include vendor prefixes if necessary */
+	-webkit-animation-name: openFlipRight;
+	-moz-animation-name: openFlipRight;
+	-o-animation-name: openFlipRight;
+	-ms-animation-name: openFlipRight;
+	/* Add more vendor prefixes as needed */
+}
+
+.rotateOnObject {
+	animation: rotateOnSelf 1s linear 2;
+}
+
+#FIN-SECTION {
+	animation-name: openFlipDown;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	/* Include vendor prefixes if necessary */
+	-webkit-animation-name: openFlipDown;
+	-moz-animation-name: openFlipDown;
+	-o-animation-name: openFlipDown;
+	-ms-animation-name: openFlipDown;
+	/* Add more vendor prefixes as needed */
+}
+
+#FIN-SMILE,
+#FIN-SMILE-ALERT {
+	animation-name: zoomInOut, rotateOnSelf;
+	animation-duration: 2s, 1s;
+	/* Duration for each animation */
+	animation-timing-function: linear, linear;
+	/* Timing function for each animation */
+	animation-iteration-count: 1, 4;
+	/* Iteration count for each animation */
+	/* Include vendor prefixes if necessary */
+	-webkit-animation-name: zoomInOut, rotateOnSelf;
+	-moz-animation-name: zoomInOut, rotateOnSelf;
+	-o-animation-name: zoomInOut, rotateOnSelf;
+	-ms-animation-name: zoomInOut, rotateOnSelf;
+}
+
+#MANAGE-SECTION {
+	animation-name: openFlipDown;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	/* Include vendor prefixes if necessary */
+	-webkit-animation-name: openFlipDown;
+	-moz-animation-name: openFlipDown;
+	-o-animation-name: openFlipDown;
+	-ms-animation-name: openFlipDown;
+	/* Add more vendor prefixes as needed */
+}
+
+
+.contineStart {}
+
+.contineStartAction {
+	animation: zoomInOutX2 1s linear 3;
+}
+
+#myScoresPartieImg {
+	animation-name: rotateOnSelf;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: 3;
+}
+
+.myScoresPartieImg-action {
+	animation-name: zoomInOutX2;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: 3;
+}
+
+#PARTIE-HELP-OFF-btn {
+
+}
+#PARTIE-HELP-coolOFF-btn,
+#PARTIE-HELP-ON-btn {
+	animation-name: rotateOnSelf;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: 3;
+	/* Repeat 3 times */
+}
+
+.PARTIE-HELP-btns1 {
+	animation-name: zoomInOutX4 1s linear 2;
+	}
+.PARTIE-HELP-btns0 {
+animation: rotateOnSelfGAUCHE 0.5s linear 4;
+}
+
+
+#PARTIE-HELP-OFF-IMG {
+	animation-name: zoomInOutX2;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 2;
+}
+
+.PARTIE-HELP-OFF-IMG-action {
+	animation-name: zoomInOutX2;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 2;
+	/* Repeat 2 times */
+}
+
+#PARTIE-RESTE {
+	animation-name: zoomInOutX25;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 2;
+	/* Repeat 4 times */
+}
+

@@ -1,0 +1,213 @@
+@charset "UTF-8";
+body {
+ height: 100%;
+ margin: 0;
+ background-color: #006625;
+}
+
+.ECRAN-BG {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+}
+
+#PIQUE,
+#COEUR,
+#TREFLE,
+#CARREAU {
+ position: fixed;
+ width: fit-content;
+ height: fit-content;
+}
+#PIQUE {
+ top: 30px;
+ left: 30px;
+}
+#COEUR {
+ top: 30px;
+ right: 30px;
+}
+#CARREAU {
+ bottom: 30px;
+ left: 30px;
+}
+#TREFLE {
+ bottom: 30px;
+ right: 30px;
+}
+
+#ECRAN-PROJECTEUR {
+display: none;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ margin: auto;
+ width: 100%;
+ height: 100%;
+	align-items: center;
+ overflow: hidden; /* Ensure content doesn't overflow rounded corners */
+ background-color: none;
+ z-index: 2000;
+	animation-name: openZoom;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	/* Include vendor prefixes if necessary */
+	-webkit-animation-name: openZoom;
+	-moz-animation-name: openZoom;
+	-o-animation-name: openZoom;
+	-ms-animation-name: openZoom;
+	/* Add more vendor prefixes as needed */
+}
+
+#ECRAN-CONTAINER {
+display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ margin: auto;
+ width: 100%;
+ height: 100%;
+ /*
+ display: flex;
+ flex-direction: column;
+ */
+ align-items: center;
+ overflow: hidden;
+ background-color: none;
+  z-index: 2001;
+}
+
+#TABLEAU-CONTAINER-PROJ {
+	display: none;
+}
+#RESULTATS-BLOCK-PROJ {
+	display: none;
+}
+#DEBUT-PROJ {
+	 width: 100%;
+ height: 100%;
+	display: none;
+}
+
+
+
+.pleinEcran {
+ background-color: none;
+ width: 100%;
+ height: 100%;
+z-index: 3000;
+}
+
+#modalOverlay {
+display:none;
+ position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+    z-index: 99898;
+}
+
+/* STRUCTURE DE BASE DE CHAQUE SECTION dans feuille sections.css */
+.TITRE {
+	width: 100%;
+	height: fit-content;
+	text-align: center;
+	margin-top: 15px; /* Distance from top */
+}
+
+.TITRE {
+	color: yellow;
+	font-size: 3.5em;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	padding: 10px 0 0 0;
+}
+.BLOCK-TOP {
+	color: #b3e0ff;
+	font-size: 2.7em;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+padding: 10px 0 0 0;
+}
+
+.BLOCK-TOP {
+	width: 100%;
+	height: fit-content;
+ 	margin-top: 5px; /* Distance from SAMPLE-1 */
+	text-align: center;
+}
+.MAIN-COLS {
+	margin-top: 30px; /* Distance from SAMPLE-TEXT-1 */
+ display: flex;
+ justify-content: space-between; /* Adjust alignment as needed */
+}
+.MAIN-ROWS {
+	margin-top: 20px; /* Distance from SAMPLE-TEXT-1 */
+background-color: none;
+
+}
+#BLOC-LEFT,
+#BLOC-CENTER,
+#BLOC-RIGHT {
+ flex: 1;
+}
+.BAS{
+	 margin-top: 40px; /* Distance from SAMPLE-BLOC */
+}
+
+/*========= TOOLBAR  ================*/
+#TOOLBAR-CONTAINER {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	z-index: 999;
+}
+.toolBtnBar {
+	display: none;
+	cursor: pointer;
+	transition: transform 0.2s;
+	/* animation: zoomInOutX15 1s 2, rotateOnSelf 1s linear; */
+	/* padding: top right bottom left */
+	padding: 0 15px 0 15px;
+	width: 48px;
+	height: 48px;
+}
+
+.toolBtnBar:hover {
+	transform: scale(1.3) translateY(-2px);
+}
+.toolBtnBar:active {
+	transform: scale(1) translateY(0);
+}
+
+
+/*============================================== */
+/*========= TOOLBAR PROJECTEUR  ================*/
+#TOOLBAR-PROJ-CONTAINER {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	z-index: 999;
+}
+

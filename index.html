@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tournoi de belote</title>
+	<link href="DATA/css/structure.css" rel="stylesheet" type="text/css" />
+	<link href="DATA/css/sections.css" rel="stylesheet" type="text/css" />
+	<link href="DATA/css/decoration.css" rel="stylesheet" type="text/css" />
+	<link href="DATA/css/myMsgeBox-base.css" rel="stylesheet" type="text/css" />
+	<link href="DATA/css/aboutAuteur.css" rel="stylesheet" type="text/css" />
+	<link href="DATA/css/tableauTables.css" rel="stylesheet" type="text/css" />
+	<link href="DATA/css/radiobuttons.css" rel="stylesheet" type="text/css" />
+	<link href="DATA/css/animations.css" rel="stylesheet" type="text/css" />
+	<link href="DATA/css/keyframes.css" rel="stylesheet" type="text/css" />
+	<script src="DATA/Scripts/jquery-3.7.1.min.js"></script>
+	<script src="DATA/Scripts/myMsgeBox.js"></script>
+	<script src="DATA/Scripts/aboutAuteur.js"></script>
+	<script src="DATA/Scripts/toolbar.js"></script>
+	<script src="DATA/Scripts/mathFunctions.js"></script>
+	<script src="DATA/Scripts/myFonctions.js"></script>
+	<script src="DATA/Scripts/tableauTablesScoresCreateur.js"></script>
+	<script src="DATA/Scripts/myScriptsStorage.js"></script>
+	<script src="DATA/Scripts/starsBar.js"></script>
+	<script src="DATA/Scripts/navigation.js"></script>
+	<style>
+	</style>
+</head>
+
+<body>
+	<!-- ============================================ -->
+	<div id="ECRAN-TOURNOI-DIV" class="ECRAN-BG"></div>
+	<!-- ============================================  -->
+	<!-- ====== DECO COINS ========-->
+	<div id="PIQUE" class="animateCorner"><img src="DATA/images/pique.png" width="80px" height="80px" alt="" /></div>
+	<div id="COEUR" class="animateCorner"><img src="DATA/images/coeur.png" width="80px" height="80px" alt="" /></div>
+	<div id="CARREAU" class="animateCorner"><img src="DATA/images/carreau.png" width="80px" height="80px" alt="" /></div>
+	<div id="TREFLE" class="animateCorner"><img src="DATA/images/trefle.png" width="80px" height="80px" alt="" /></div>
+<!-- ====== END DECO COINS ========-->
+	<div id="ECRAN-PROJECTEUR">
+		<!-- ==============-->
+		<div id="DEBUT-PROJ" class="hideProj">
+		<div id="DEBUT-DIV-CONTAINER">
+			<div id="DEBUT-DIV">
+				<h1>On est prêt ! On commence ?</h1>
+				<ol>
+					<li>Les équipes ont été réparties aléatoirement pour chaque partie.</li>
+					<li>A chaque début de partie, vous devrez trouver votre table.</li>
+					<li>A la fin de chaque partie, vérifiez le total des 2 équipes: <span class="DEBUT-NUM">1944</span>.</li>
+					<li>Apportez <span class="DEBUT-UNE">UNE</span> feuille de votre carnet de scores pour <span class="DEBUT-UNE">valider</span> vos résultats.</li>
+					<li>Soyez gentil et souriant avec l'animateur.</li>
+					<li>On est là pour s'amuser !!</li>
+				</ol>
+			</div>
+		</div>
+		<div id="DEBUT-IMG-DIV-CONTAINER">
+			<div id="DEBUT-IMG-DIV">
+					<img id="DEBUT-1" src="DATA/images/test.png"/>
+						<!-- ==
+					<img id="DEBUT-2" src="DATA/images/amuse.png"/>
+					<img id="DEBUT-3" src="DATA/images/silence.png"/>
+					====-->
+					<img id="DEBUT-4" src="DATA/images/general.png"/>
+			</div>
+		</div>	
+		</div>
+		<!-- ==============-->
+		<div id="TABLEAU-CONTAINER-PROJ" class="hideProj">
+			<div id="TABLEAU-HEADER-TITRE-PROJ"></div>
+			<div id="PARTIE-FONTS-CONTAINER">
+				<div id=" PARTIE-FONTS-UP">
+					<img src="DATA/images/up.png" class="iconBtnImg32" onclick="changePartieFontPlus()" alt="" />
+				</div>
+				<div id="PARTIE-FONTS-DOWN">
+					<img src="DATA/images/down.png" class="iconBtnImg32" onclick="changePartieFontMinus()" alt="" />
+				</div>
+			</div>
+			<div id="TABLEAU-HEADER-DIV-PROJ" class="hideProj"></div>
+			<div id="TABLEAU-TABLES-SCROLL-PROJ"></div>
+		</div>
+		<!-- ==============-->
+		<div id="RESULTATS-BLOCK-PROJ" class="hideProj">
+			<div id="RESULTATS-TABLEAU-HEADER-PROJ">
+				<div id="RESULTATS-BLOCK-HEADER1-PROJ">N°</div>
+				<div id="RESULTATS-BLOCK-HEADER2-PROJ">Equipes</div>
+				<div id="RESULTATS-BLOCK-HEADER3-PROJ">Partie 1</div>
+				<div id="RESULTATS-BLOCK-HEADER4-PROJ">Partie 2</div>
+				<div id="RESULTATS-BLOCK-HEADER5-PROJ">Partie 3</div>
+				<div id="RESULTATS-BLOCK-HEADER6-PROJ">Partie 4</div>
+				<div id="RESULTATS-BLOCK-HEADER7-PROJ">Total</div>
+				<div id="RESULTATS-BLOCK-HEADER8-PROJ">Pos</div>
+			</div>
+			<div id="RESULTATS-TABLEAU-DIV-PROJ"></div>
+			<div id="SCORES-FONTS-CONTAINER">
+				<div id="FONTS-UP">
+					<img src="DATA/images/up.png" class="iconBtnImg32" onclick="changeFontPlus()" alt="" />
+				</div>
+				<div id="FONTS-DOWN">
+					<img src="DATA/images/down.png" class="iconBtnImg32" onclick="changeFontMinus()" alt="" />
+				</div>
+			</div>
+		</div>
+		<!-- ==============-->
+		<div id="TOOLBAR-PROJ-CONTAINER"></div>
+	</div>
+	<!-- ==============-->
+	<div id="ECRAN-CONTAINER">
+		<!-- ============================================ -->
+		<!-- SECTIONS   -->
+		<!-- ============================================  -->
+		<div id="INTRO-SECTION" class="pleinEcran">
+			<div class="TITRE">Tournoi de Belote</div>
+			<div class="BLOCK-TOP">
+				<span ID="salut">Bienvenu!</span>
+			</div>
+			<div id="INTRO-ROWS">
+				<div id="INTRO-1-TEXT">
+					<div class="INTRO-CONTAINER">
+					<h1>Passez en mode Plein Ecran immédiatement.</h1>
+					<h2>Appuyez sur la touche F11.</h2>
+					<h3>C'est fait pour ça !</h3>
+					</div>
+				</div>
+				<div id="INTRO-2-TEXT">
+					<div class="INTRO-CONTAINER">
+					<h2>Ce tournoi se joue en 4 parties de 12 donnes sans annonces, avec un total de 1944 points par partie.</h2>
+					<h3>Placez la souris sur un bouton pour voir ce qu'il fait.</h3>
+					<h1>Laissez-vous guider par le bouton vert...</h1>
+					</div>
+				</div>
+				<div id="INTRO-3-TEXT">
+					<div class="INTRO-CONTAINER">
+					<h2>Si vous fermez accidentellement cet outil, pas de problème...</h2>
+					<h3>Relancez l'outil et je vous demanderai de confirmer la restauration...</h3>
+					<h1>Allez, on commence... Test ou Nouveau tournoi ?</h1>
+					</div>
+				</div>
+			</div>
+			<div id="INTRO-BTNS">
+				<img id="TEST-TOURNOI" class="iconBtnImg80" src="DATA/images/test.png" onclick="startTestTournoi()" title="Faites un test" alt="Faites un test" />
+				<img class="iconBtnImg80" src="DATA/images/start.png" onclick="goToSection('INTRO-SECTION')" title="Continuez..." />
+			</div>
+		</div>
+		<!-- ============================================ -->
+		<!-- INSCRIPTION-SECTION   -->
+		<!-- ============================================  -->
+		<div id="INSCRIPTION-SECTION" class="pleinEcran">
+			<div class="TITRE">Tournoi de Belote</div>
+			<div class="BLOCK-TOP">Inscriptions</div>
+			<div class="MAIN-COLS-INSCRIPTION">
+				<div id="INSCRIPTION-GAUCHE">
+					<div id="INSCRIPTION-LISTE-HEADER">
+						<div id="INSCRIPTION-BLOCK-HEADER1">N°</div>
+						<div id="INSCRIPTION-BLOCK-HEADER2">Equipes inscrites</div>
+					</div>
+					<div id="INSCRIPTION-LISTE-DIV"></div>
+				</div>
+				<div id="INSCRIPTION-DROITE">
+					<div id="INSCRIPTION-DROITE-BOX">
+						<div id="INSCRIPTION-CHECK">
+							<div id="checkOK-yes"><img class="checkImg" src="DATA/images/okUP.png" alt="ok" /></div>
+							<div id="checkOK-no"><img class="checkImg" src="DATA/images/okDOWN.png" alt="ok" /></div>
+						</div>
+						<form id="TeamRegister">
+							<fieldset>
+								<legend>
+									<h2>Nouvelle équipe:</h2>
+								</legend>
+								<label id="labelNewTeam" for="newTeamName">Nom de l'équipe N° <span id="enterTeamNum"></span> :</label>
+								<input type="text" id="newTeamName" name="newTeamName" maxlength="50">
+								<div style="text-align:center">
+									<input id="newTeamNameBtn" type="button" class="btn" onclick="saveBtnEquipe($('#newTeamName').val());" value="Enregistrez">
+								</div>
+							</fieldset>
+						</form>
+					</div>
+					<div id="INSCRIPTION-BTNS">
+						<img id="construitTournoi" src="DATA/images/start.png" onclick="ConfirmDialogTournoi()" title="Fin des inscriptions" alt="Fin des inscriptions" class="iconBtnImg80" />
+						<img id="construitTournoi-off" src="DATA/images/stop.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ============================================ -->
+		<!-- PARTIE
+<!-- ============================================  -->
+		<div id="PARTIE-SECTION" class="pleinEcran">
+			<div class="TITRE">Tournoi de Belote</div>
+			<div id="PARTIE-BLOCK-TOP"></div>
+			<div class="MAIN-COLS-PARTIE">
+				<div id="PARTIE-GAUCHE">
+					<div id="PARTIE-STATUS">
+						<h4 id="PARTIE-RESTE">Résultats:</h4>
+					</div>
+					<div id="PARTIE-TABLEAU-CONTAINER">
+						<div id="PARTIE-TABLEAU-HEADER-DIV"></div>
+						<div id="TABLEAU-TABLES-SCROLL"></div>
+					</div>
+				</div>
+				<div id="PARTIE-CENTRE">
+					<div id="myScoresPartieCover">
+						<img id="myScoresPartieImg" src="DATA/images/table.png" alt="">
+					</div>
+					<div id="myScoresPartie">
+						<div id="editScore">
+							<div id="EQUIPEA">
+								<h2 id="EQUIPEA-H1">Equipe A</h2>
+								<input type="text" id="EQUIPEA-INPUT">
+							</div>
+							<div id="EQUIPEB">
+								<h2 id="EQUIPEB-H1">Equipe B</h2>
+								<input type="text" readonly id="EQUIPEB-INPUT">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="PARTIE-DROITE">
+					<div id="PARTIE-HELP-OFF">
+						<div id="PARTIE-HELP-OFF-IMG">
+							<img id="imgHelpOff" src="DATA/images/main.png" width="200px" height="200px" alt="" />
+						</div>
+						<div id="PARTIE-HELP-OFF-btn-CONTAINER">
+							<div id="PARTIE-HELP-OFF-btn">
+								<img src="DATA/images/aide-show.png" class="iconBtnImg48" title="Montrer l'aide." alt="Voilà l'aide" />
+							</div>
+							<div id="PARTIE-HELP-coolOFF-btn">
+								<img src="DATA/images/cool.png" class="iconBtnImg48" />
+							</div>
+						</div>
+					</div>
+					<div id="PARTIE-HELP-ON">
+						<div id="PARTIE-HELP-ON-titre">
+							<p class="helpTitre">Les étapes à suivre</p>
+						</div>
+						<div id="PARTIE-HELP-ON-ol">
+							<ol class="helpText-ol">
+								<li>Cliquez sur la table à gauche.</li>
+								<li>Les scores apparaîssent.</li>
+								<li>Seul le score de l'équipe A peut être édité. <span style="font-style:italic;">Je calcule l'autre score pour vous.</span> </li>
+								<li>Puis, appuyez sur TOUCHE ENTREE.</li>
+								<li class="confirmScore">Le joueur doit confirmer les scores.</li>
+								<li>Vous pouvez aussi changer les scores si une équipe le demande.</li>
+								<li>Vous pourrez continuer quand tous les scores seront définis.</li>
+							</ol>
+						</div>
+						<div id="PARTIE-HELP-ON-btn">
+							<img src="DATA/images/aide.png" class="iconBtnImg48" onclick="showHelpOff();" title="Cachez le cadre de l'aide." alt="Plus d'aide" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="PARTIE-FIN">
+				<img id="PARTIE-FIN-img" src="DATA/images/start.png" class="contineStart" onclick="goToSection('SCORES-SECTION')" title="Affiche résultats" alt="" />
+			</div>
+		</div>
+		<!-- ============================================ -->
+		<!-- SECTION  -->
+		<!-- ============================================  -->
+		<div id="FIN-SECTION" class="pleinEcran">
+			<div class="TITRE">Tournoi de Belote</div>
+			<div class="BLOCK-TOP">Bravo !</div>
+			<div class="MAIN-ROWS">
+				<div id="FIN-TEXT-CONTAINER">
+					<div id="FIN-TEXT">
+						<h2>Bravo ! Vous avez terminé le tournoi !</h2>
+						<h3>Cet outil est gratuit.</h3>
+						<h1>Partagez-le !</h1>
+					</div>
+					<div id="FIN-SMILE">
+						<img src="DATA/images/test.png" onclick="smileAsk()" />
+					</div>
+					<div id="FIN-SMILE-ALERT">
+						<img src="DATA/images/alert.png" onclick="smileAsk()" />
+					</div>
+				</div>
+			</div>
+			<div class="BAS">
+				<div id="FIN-BTNS">
+					<img id="FIN-TOURNOI" class="iconBtnImg80" src="DATA/images/settings.png" onclick="goToSection('MANAGE-SECTION')" title="Besoin d'exporter le tournoi... Allons-y !" alt="" />
+				</div>
+			</div>
+		</div>
+		<!-- ============================================ -->
+		<!-- ============================================ -->
+		<!-- SECTIONS   -->
+		<!-- ============================================  -->
+		<div id="MANAGE-SECTION" class="pleinEcran">
+			<div class="TITRE">Tournoi de Belote</div>
+			<div class="BLOCK-TOP">Importer / Exporter le Tournoi</div>
+			<div class="MAIN-ROWS-MANAGE">
+				<div id="MANAGE-INTRO">
+					<p class="XML-INTRO">Vous pouvez exporter les données du tournoi et créer un fichier XML. Pourquoi faire ça ? Soit vous souhaitez garder une copie du tournoi pour vos archives, soit vous avez un souci avec l’ordinateur et devez en changer au cours du tournoi.</p>
+				</div>
+			</div>
+			<div id="MANAGE-DATA">
+				<div id="MANAGE-EXPORT">
+					<h3>Pour exporter le tournoi :</h3>
+					<ol>
+						<li>Copiez les données dans le Presse Papier</li>
+						<li>Sortez du mode plein écran - Touche F11</li>
+						<li>Ouvrez un Éditeur de Texte</li>
+						<li>Collez le Presse Papier</li>
+						<li>Enregistrez le fichier avec suffixe ".xml"</li>
+						<li>Revenez au mode plein écran - Touche F11</li>
+					</ol>
+					<h3><span>Pour importer le tournoi :</span></h3>
+					<ol>
+						<li>Avant d'ouvrir cet outil...</li>
+						<li>Ouvrez le fichier xml et copiez les données dans le Presse Papier</li>
+						<li>Revenez ici...</li>
+						<li>Collez les données dans la case rouge</li>
+						<li>Cliquez sur le bouton « Importez »</li>
+					</ol>
+				</div>
+				<div id="XML-DATA-BTNS-CONTAINER">
+					<div>
+						<img id="XML-COPIE" src="DATA/images/copy.png" class="iconBtnImg32" onclick="XMLCOPYDATA()" title="Copiez dans Presse papier" />
+					</div>
+					<div>
+						<img id="XML-COLLE" src="DATA/images/paste.png" class="iconBtnImg32" onclick="XMLPASTEDATA()" title="Collez Presse papier" />
+					</div>
+					<div>
+						<img id="XML-IMPORTE" src="DATA/images/import.png" class="iconBtnImg32" onclick="XMLIMPORTDATA()" title="Importez tournoi" />
+					</div>
+				</div>
+				<div id="XML-DATA-CONTAINER">
+					<div id="XML-DATA-EXPORT">
+						<textarea id="XML-CONTENU-EXPORT"></textarea>
+					</div>
+					<div id="XML-DATA-IMPORT">
+						<textarea id="XML-CONTENU-IMPORT"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="BAS">
+			</div>
+		</div>
+		<!-- ======== END SECTIONS ======-->
+		
+		<div id="TOOLBAR-CONTAINER"></div>
+		
+		<div id="UFO-CONTAINER">
+		<div id="UFO-BUBBLE-CONTAINER">
+		<div id="BUBBLE-TEXT">J'ai tous les scores!</div>
+		<div id="BUBBLE-IMG"><img src="DATA/images/bubble.png" width="120" height="90" ></div>
+		</div>
+		<div id="UFO-LANDER"></div>
+		
+		</div>
+		
+		<!-- ============================================ -->
+		<!-- END CONTAINER   -->
+	</div>
+	<!-- ============================================  -->
+	<div id="modalOverlay"></div>
+	<!-- ============================================  -->
+	<script>
+		$(document).ready(function() {
+			//Bloque ENTERKEY dans le chanque des nouvelles equipes
+			$('#newTeamName').keypress(function(event) {
+				var keycode = (event.keyCode ? event.keyCode : event.which);
+				if (keycode == '13') {
+					event.preventDefault();
+					//saveBtnEquipe($('#newTeamName').val());
+					$("#newTeamNameBtn").focus();
+				}
+			});
+			$('#newTeamName').on('change', function() {
+				// var inputValue = $('#newTeamName').val();
+				$("#newTeamNameBtn").focus();
+			});
+			// prevent clicking behing modal popup
+			// Prevent clicks on elements behind the modal overlay
+			$("#modalOverlay").click(function(event) {
+				//	event.stopPropagation(); // Stop the click event from propagating
+			});
+			$('#EQUIPEA-INPUT').on('change', function() {
+				var newValue = Number($(this).val());
+				$('#EQUIPEB-INPUT').val(1944 - newValue);
+				askForConfirmScore();
+			});
+			
+			loadApp();
+		
+		});
+
+	</script>
+</body>
+
+</html>
