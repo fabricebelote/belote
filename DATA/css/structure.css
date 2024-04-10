@@ -52,16 +52,7 @@ display: none;
  overflow: hidden; /* Ensure content doesn't overflow rounded corners */
  background-color: none;
  z-index: 2000;
-	animation-name: openZoom;
-	animation-duration: 1s;
-	animation-timing-function: linear;
-	animation-iteration-count: 1;
-	/* Include vendor prefixes if necessary */
-	-webkit-animation-name: openZoom;
-	-moz-animation-name: openZoom;
-	-o-animation-name: openZoom;
-	-ms-animation-name: openZoom;
-	/* Add more vendor prefixes as needed */
+
 }
 
 #ECRAN-CONTAINER {
@@ -86,14 +77,44 @@ display: block;
 
 #TABLEAU-CONTAINER-PROJ {
 	display: none;
+		animation-name: openZoom;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	/* Include vendor prefixes if necessary */
+	-webkit-animation-name: openZoom;
+	-moz-animation-name: openZoom;
+	-o-animation-name: openZoom;
+	-ms-animation-name: openZoom;
+	/* Add more vendor prefixes as needed */
 }
 #RESULTATS-BLOCK-PROJ {
+		animation-name: openZoom;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	/* Include vendor prefixes if necessary */
+	-webkit-animation-name: openZoom;
+	-moz-animation-name: openZoom;
+	-o-animation-name: openZoom;
+	-ms-animation-name: openZoom;
+	/* Add more vendor prefixes as needed */
 	display: none;
 }
 #DEBUT-PROJ {
 	 width: 100%;
  height: 100%;
 	display: none;
+		animation-name: openZoom;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	/* Include vendor prefixes if necessary */
+	-webkit-animation-name: openZoom;
+	-moz-animation-name: openZoom;
+	-o-animation-name: openZoom;
+	-ms-animation-name: openZoom;
+	/* Add more vendor prefixes as needed */
 }
 
 

@@ -19,8 +19,8 @@ COMMON to the 3 modals
 .myMsgeBox-modal {
 	position: fixed;
 	z-index: 99999;
-	left: 30%;
-	top: 25%;
+	left: 32%;
+	top: 20%;
 	min-width: 400px;
 	/* Set a minimum width */
 	max-width: 500px;

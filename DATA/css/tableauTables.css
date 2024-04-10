@@ -23,7 +23,6 @@ margin-right: auto;
  font-size: 3em;
 }
 #TABLEAU-HEADER-DIV-PROJ {
-	
 	width: 400px;
 	height: 30px;
 	display: flex;
@@ -35,16 +34,16 @@ margin-right: auto;
 	padding: 0;
 	border-collapse: collapse;
 	cursor: default;
-	background-color: red;
+	background-color: none;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 
 /* Table ID de la table qui reçoit header  */
 #PARTIE-TABLE-HEADER-PROJ {
 	background-color: #996600;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	color: #ffcc66;
 	width: 400px;
 	text-align: center;
@@ -84,7 +83,7 @@ margin-right: auto;
 	height: 82%;
 	max-height: 83%;
 	border-collapse: collapse;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	text-align: center;
 	background-color: #ffffe6;
 	cursor: default;
@@ -138,7 +137,7 @@ margin-right: auto;
 #PARTIE-TABLEAU-CONTAINER {
 	max-height: 380px;
 	/* Set maximum height for the container */
-	overflow-y: auto;
+	/*overflow-y: auto; */
 	/* Enable vertical scrolling */
 }
 
@@ -150,7 +149,7 @@ margin-right: auto;
 /* Table ID de la table qui reçoit header  */
 #PARTIE-TABLE-HEADER {
 	background-color: #996600;
-	font-size: 18px;
+	font-size: 1.3em;
 	color: #ffcc66;
 	width: 100%;
 	text-align: center;
@@ -187,7 +186,7 @@ margin-right: auto;
 #PARTIE-TABLEAU {
 	width: 100%;
 	border-collapse: collapse;
-	font-size: 18px;
+	font-size: 1.3em;
 	text-align: center;
 	background-color: #ffffe6;
 	cursor: default;

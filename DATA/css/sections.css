@@ -309,7 +309,7 @@ z-index: 1002;
 }
 
 #INSCRIPTION-LISTE-DIV p {
-	font-size: 1.1em;
+	font-size: 1.2em;
 	text-align: left;
 	color: white;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
@@ -552,7 +552,7 @@ width: 80px;
 }
 
 #PARTIE-RESTE {
-	font-size: 1.5em;
+	font-size: 1.7em;
 	text-align: center;
 	color: white;
 	/* Text color */
@@ -776,7 +776,7 @@ width: 80px;
 	display: flex;
 	flex-direction: column;
 	/* Arrange children in a column */
-	align-items: center;
+
 	height: 100vh;
 	width: 100vw;
 	background-color: #006625;
@@ -789,7 +789,7 @@ width: 80px;
 	width: 100px;
 	height: 40px;
 	margin-top: 5px;
-	margin-left: 80%;
+	margin-left: 88%;
 	background-color: none;
 }
 
@@ -813,8 +813,8 @@ width: 80px;
 }
 
 #RESULTATS-TABLEAU-HEADER-PROJ {
-	width: 90%;
-	height: 20px;
+	width: 94%;
+	height: fit-content;
 	display: flex;
 	/* Use flexbox */
 	flex-direction: row;
@@ -824,57 +824,18 @@ width: 80px;
 	padding: 0;
 	border-collapse: collapse;
 	cursor: pointer;
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 	font-size: 1em;
 	text-align: left;
 	background-color: #996600;
 	color: #ffcc66;
 }
 
-#RESULTATS-BLOCK-HEADER1-PROJ {
-	width: 20px;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-
-#RESULTATS-BLOCK-HEADER2-PROJ {
-	width: fit-content;
-	margin-right: 360px;
-}
-
-#RESULTATS-BLOCK-HEADER3-PROJ {
-	width: fit-content;
-	margin-right: 70px;
-}
-
-#RESULTATS-BLOCK-HEADER4-PROJ {
-	width: fit-content;
-	margin-right: 70px;
-}
-
-#RESULTATS-BLOCK-HEADER5-PROJ {
-	margin-right: 60px;
-	width: fit-content;
-}
-
-#RESULTATS-BLOCK-HEADER6-PROJ {
-	margin-right: 70px;
-	width: fit-content;
-}
-
-#RESULTATS-BLOCK-HEADER7-PROJ {
-	margin-right: 85px;
-	width: fit-content;
-}
-
-#RESULTATS-BLOCK-HEADER8-PROJ {
-	width: fit-content;
-}
 
 /* div qui recçoit le tableau avec toutes les donnees scrollable */
 #RESULTATS-TABLEAU-DIV-PROJ {
-	width: 90%;
+	width: 95%;
 	height: calc(100vh - 150px);
 	overflow: auto;
 	/* Enable scrolling */
@@ -883,9 +844,19 @@ width: 80px;
 	/* Enable vertical scrolling if needed */
 	background-color: wheat;
 	font-size: 1em;
+
 }
 
-#SCORES-PROJ {
+.SCORES-PROJ-TH {
+	width: 100%;
+	cursor: pointer;
+	font-size: 1em;
+	text-align: center;
+	border-collapse: collapse;
+
+}
+
+.SCORES-PROJ {
 	width: 100%;
 	height: calc(100vh - 150px);
 	cursor: pointer;
@@ -897,62 +868,74 @@ width: 80px;
 }
 
 /* Default styling for even rows */
-#SCORES-PROJ tr.even {
+.SCORES-PROJ tr.even {
 	background-color: #ffffcc;
 	/* Light yellow background */
 }
 
 /* Default styling for odd rows */
-#SCORES-PROJ tr.odd {
+.SCORES-PROJ tr.odd {
 	/*background-color: #ffffff;*/
 }
 
 /* Additional styling for special-even rows */
-#SCORES-PROJ tr.special-even {
+.SCORES-PROJ tr.special-even {
 	/* font-weight: bold;  */
 }
 
 /* Additional styling for special-odd rows */
-#SCORES-PROJ tr.special-odd {
+.SCORES-PROJ tr.special-odd {
 	/* font-style: italic; */
 }
 
-#SCORES-PROJ tr:hover {
+.SCORES-PROJ tr:hover {
 	background-color: #b3c6ff;
 }
 
-#SCORES-PROJ td,
-#SCORES-PROJ th {
+.SCORES-PROJ td,
+.SCORES-PROJ th {
 	/* Apply styles to both table cells and header cells */
 	padding: 2px;
 	border: 1px solid black;
 	/* Add border to all cells */
 }
 
+.SCORES-PROJ-TH th {
+	/* Apply styles to both table cells and header cells */
+	padding: 2px;
+
+}
+
 /* Controle toutes les col des 2 tables ensemble */
-#SCORES-PROJ td:nth-child(1) {
+.SCORES-PROJ td:nth-child(1),
+.SCORES-PROJ-TH th:nth-child(1)
+ {
 	width: 3%;
 }
-
-#SCORES-PROJ td:nth-child(2) {
-	width: 32%;
+.SCORES-PROJ td:nth-child(2), 
+.SCORES-PROJ-TH th:nth-child(2) {
+	width: 25%;
 	text-align: left;
+	padding-left: 10px;
 }
-
-#SCORES-PROJ td:nth-child(3),
-#SCORES-PROJ td:nth-child(4),
-#SCORES-PROJ td:nth-child(5),
-#SCORES-PROJ td:nth-child(6),
-#SCORES-PROJ td:nth-child(7),
-#SCORES-PROJ td:nth-child(8) {
-	width: 10%;
+.SCORES-PROJ td:nth-child(3),
+.SCORES-PROJ td:nth-child(4),
+.SCORES-PROJ td:nth-child(5),
+.SCORES-PROJ td:nth-child(6),
+.SCORES-PROJ td:nth-child(7),
+.SCORES-PROJ-TH th:nth-child(3),
+.SCORES-PROJ-TH th:nth-child(4),
+.SCORES-PROJ-TH th:nth-child(5),
+.SCORES-PROJ-TH th:nth-child(6),
+.SCORES-PROJ-TH th:nth-child(7) {
+	width: 7%;
 	text-align: center;
 }
 
-#SCORES-PROJ th:nth-child(1),
-#SCORES-PROJ th:nth-child(2),
-#SCORES-PROJ th:nth-child(3) {
-	/* Add your styles here */
+.SCORES-PROJ td:nth-child(8),
+.SCORES-PROJ-TH th:nth-child(8) {
+	width: 5%;
+	text-align: center;
 }
 
 /* ========================================== */

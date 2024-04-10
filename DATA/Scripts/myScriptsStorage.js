@@ -109,6 +109,15 @@ function restaureTournoiXML() {
 			}];
 			myMsgeBox(myData);
 		}
+	} else {
+		var myData = [{
+				type: "A",
+				title: "Euh... On clique dans le vide !",
+				msge: "Si y'a rien à importer, je fais quoi, moi ?",
+				btn1: "Désolé !",
+				image: "DATA/images/alert.png"
+			}];
+			myMsgeBox(myData);
 	}
 }
 ////////////////////////////////////////////////////////////////////////////////

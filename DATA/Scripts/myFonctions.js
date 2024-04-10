@@ -51,10 +51,10 @@ function buildTeams() {
 	var maListArray = ["Jean et les Troubadours", "Jean et les Vikings", "Pierre et les Spartiates", "Marie et les Aventuriers", "Paul et les Explorateurs", "François et les Tigres", "Sophie et les Phénix", "Luc et les Renards", "Émilie et les Loups", "Jacques et les Dragons", "Pierre et les Troubadours", "Jean et les Vikings", "Marie et les Spartiates", "Paul et les Aventuriers", "Sophie et les Explorateurs", "Luc et les Tigres", "Émilie et les Phénix", "Jacques et les Renards", "François et les Loups", "Pierre et les Dragons", "Jean et les Troubadours", "Marie et les Vikings", "Paul et les Spartiates", "Sophie et les Aventuriers", "Luc et les Explorateurs", "Émilie et les Tigres", "Jacques et les Phénix", "François et les Renards", "Pierre et les Loups", "Jean et les Dragons", "Marie et les Troubadours", "Paul et les Vikings", "Sophie et les Spartiates", "Luc et les Aventuriers", "Émilie et les Explorateurs", "Jacques et les Tigres", "François et les Phénix", "Pierre et les Renards", "Jean et les Loups", "Marie et les Dragons", "Paul et les Troubadours", "Sophie et les Vikings", "Luc et les Spartiates", "Émilie et les Aventuriers", "Jacques et les Explorateurs", "François et les Tigres"];
 	// Shuffle the list
 	maListArray = shuffleArray(maListArray);
-	var tot = Math.floor(Math.random() * (40 - 28 + 1)) + 28;
-	if (estPair(tot)) {
-		tot--;
-	}
+	//var tot = Math.floor(Math.random() * (40 - 28 + 1)) + 28;
+	//if (estPair(tot)) {
+		//tot--;
+	//}
 	tot = 19;
 	// Parcourir la liste et créer un tableau avec 8 colonnes
 	for (var i = 0; i < tot; i++) {
@@ -74,10 +74,6 @@ function buildTeams() {
 		LISTEEquipes.push(objet);
 	}
 	TOTALRESULTATS = LISTEEquipes.length;
-	// Loop through each element of the array and log it
-	//LISTEEquipes.forEach(function(element) {
-	//    console.log(element);
-	//});
 }
 //===========================
 function assignFakeScores() {
@@ -128,9 +124,6 @@ function shuffleArray(array) {
 	return array;
 }
 
-
-//=======================================================
-// Utilisation...
 //=======================================================
 function displayScore(rowNum) {
 	var equipeA = LISTEPartie[rowNum][0];
@@ -359,8 +352,8 @@ function addName(newName) {
 		LISTEEquipes.push(nouvelObjet);
 		exportTournoiXML();
 		sortDescendingTeam();
-		$("#INSCRIPTION-GAUCHE").addClass('rotateOnObject').one('animationend', function() {
-    		$(this).removeClass('rotateOnObject');
+		$("#INSCRIPTION-GAUCHE").addClass('animateNewName').one('animationend', function() {
+    		$(this).removeClass('animateNewName');
 		});
 
 	

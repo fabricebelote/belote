@@ -5,6 +5,9 @@
  animation: zoomInOutX2 0.8s linear 2;
 }
 
+.animateNewName {
+animation: zoomInOutX15 0.8s linear 2;
+}
 .UFO-action {
 	display: block;
 	animation-name: ufoCross;

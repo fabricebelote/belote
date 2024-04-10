@@ -4,36 +4,48 @@
 //=====================================
 function setResultatsFont() {
 	var myNew = String(myFontSize + "em");
-	$('#SCORES-PROJ').css('font-size', myNew);
+	$('.SCORES-PROJ').css('font-size', myNew);
+	$('.SCORES-PROJ-TH').css('font-size', myNew);
+	if (LISTEEquipes.length > 20) {
+		$('#RESULTATS-TABLEAU-HEADER-PROJ').css('width', "94%");
+	} else {
+		$('#RESULTATS-TABLEAU-HEADER-PROJ').css('width', "95%");
+	
+	}
 }
 
 function changeFontPlus() {
 	myFontSize += 0.1;
 	var myNew = String(myFontSize + "em");
-	$('#SCORES-PROJ').css('font-size', myNew);
+	$('.SCORES-PROJ').css('font-size', myNew);
+	$('.SCORES-PROJ-TH').css('font-size', myNew);
 }
 
 function changeFontMinus() {
 	myFontSize -= 0.1;
 	var myNew = String(myFontSize + "em");
-	$('#SCORES-PROJ').css('font-size', myNew);
+	$('.SCORES-PROJ').css('font-size', myNew);
+	$('.SCORES-PROJ-TH').css('font-size', myNew);
 }
 //============================================
 function setPartieFont() {
 	var myNew = String(myPartieFontSize + "em");
 	$('#PARTIE-TABLEAU-PROJ').css('font-size', myNew);
+	$('#TABLEAU-HEADER-DIV-PROJ').css('font-size', myNew);
 }
 
 function changePartieFontPlus() {
 	myPartieFontSize += 0.1;
 	var myNew = String(myPartieFontSize + "em");
 	$('#PARTIE-TABLEAU-PROJ').css('font-size', myNew);
+	$('#TABLEAU-HEADER-DIV-PROJ').css('font-size', myNew);
 }
 
 function changePartieFontMinus() {
 	myPartieFontSize -= 0.1;
 	var myNew = String(myPartieFontSize + "em");
 	$('#PARTIE-TABLEAU-PROJ').css('font-size', myNew);
+	$('#TABLEAU-HEADER-DIV-PROJ').css('font-size', myNew);
 }
 //===============================================
 // Function to change font size
@@ -405,6 +417,6 @@ function createTableScores(objetCols, WHERE) {
 	//$('#RESULTATS-TABLEAU-HEADER').html('<table id="RESULTATS-TABLEAU-HEADER-TABLE-HEADER">' + tableHeader + '</table>');
 	// Append table body to INSCRIPTION-LISTE
 	//  $('#RESULTATS-TABLEAU-DIV').empty().append('<table id="RESULTATS-TABLEAU-TABLE-ID">' + tableBody + '</table>');
-	$('#RESULTATS-TABLEAU-DIV-PROJ').empty().append('<table id="SCORES-PROJ">' + tableBody + '</table>');
+	$('#RESULTATS-TABLEAU-DIV-PROJ').empty().append('<table class="SCORES-PROJ">' + tableBody + '</table>');
 	setResultatsFont();
 }
