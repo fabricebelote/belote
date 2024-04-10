@@ -47,7 +47,7 @@
 				<ol>
 					<li>Les équipes ont été réparties aléatoirement pour chaque partie.</li>
 					<li>A chaque début de partie, vous devrez trouver votre table.</li>
-					<li>A la fin de chaque partie, vérifiez le total des 2 équipes: <span class="DEBUT-NUM">1944</span>.</li>
+					<li>A la fin de chaque partie, vérifiez le total des 2 équipes: <span class="DEBUT-NUM">1944.</span></li>
 					<li>Apportez <span class="DEBUT-UNE">UNE</span> feuille de votre carnet de scores pour <span class="DEBUT-UNE">valider</span> vos résultats.</li>
 					<li>Soyez gentil et souriant avec l'animateur.</li>
 					<li>On est là pour s'amuser !!</li>
@@ -76,20 +76,24 @@
 					<img src="DATA/images/down.png" class="iconBtnImg32" onclick="changePartieFontMinus()" alt="" />
 				</div>
 			</div>
-			<div id="TABLEAU-HEADER-DIV-PROJ" class="hideProj"></div>
+			<div id="TABLEAU-HEADER-DIV-PROJ"></div>
 			<div id="TABLEAU-TABLES-SCROLL-PROJ"></div>
 		</div>
 		<!-- ==============-->
 		<div id="RESULTATS-BLOCK-PROJ" class="hideProj">
 			<div id="RESULTATS-TABLEAU-HEADER-PROJ">
-				<div id="RESULTATS-BLOCK-HEADER1-PROJ">N°</div>
-				<div id="RESULTATS-BLOCK-HEADER2-PROJ">Equipes</div>
-				<div id="RESULTATS-BLOCK-HEADER3-PROJ">Partie 1</div>
-				<div id="RESULTATS-BLOCK-HEADER4-PROJ">Partie 2</div>
-				<div id="RESULTATS-BLOCK-HEADER5-PROJ">Partie 3</div>
-				<div id="RESULTATS-BLOCK-HEADER6-PROJ">Partie 4</div>
-				<div id="RESULTATS-BLOCK-HEADER7-PROJ">Total</div>
-				<div id="RESULTATS-BLOCK-HEADER8-PROJ">Pos</div>
+			<table id="RESULTATS-TABLEAU-HEADER" class="SCORES-PROJ-TH">
+  			<tr>
+    			<th>N°</th>
+    			<th>Equipes</th>
+    			<th>Partie 1</th>
+    			<th>Partie 2</th>
+    			<th>Partie 3</th>
+    			<th>Partie 4</th>
+    			<th>Total</th>
+    			<th>Pos</th>
+  			</tr>
+			</table>
 			</div>
 			<div id="RESULTATS-TABLEAU-DIV-PROJ"></div>
 			<div id="SCORES-FONTS-CONTAINER">
@@ -222,7 +226,7 @@
 						</div>
 						<div id="PARTIE-HELP-OFF-btn-CONTAINER">
 							<div id="PARTIE-HELP-OFF-btn">
-								<img src="DATA/images/aide-show.png" class="iconBtnImg48" title="Montrer l'aide." alt="Voilà l'aide" />
+								<img src="DATA/images/aide-show.png" class="iconBtnImg48" onclick="showHelpOn()" title="Montrer l'aide." alt="Voilà l'aide" />
 							</div>
 							<div id="PARTIE-HELP-coolOFF-btn">
 								<img src="DATA/images/cool.png" class="iconBtnImg48" />
