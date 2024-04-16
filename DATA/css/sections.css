@@ -189,6 +189,11 @@ z-index: 1002;
 	background-color: none;
 }
 
+#INTRO-HOST {
+text-align: center;
+color: white;
+padding-top: 10px;
+}
 #TEST-TOURNOI {
 	display: none;
 	margin-right: 100px;

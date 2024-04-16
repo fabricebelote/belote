@@ -67,6 +67,20 @@ function createToolBar() {
 	};
 	myToolsArray.push(newObj);
 	newObj = {
+		name: "DOWNLOAD",
+		image: "DATA/images/download.png",
+		title: "Téléchargez l'outil...",
+		id: "DOWNLOAD-btn"
+	};
+	myToolsArray.push(newObj);
+	newObj = {
+		name: "TOOLS",
+		image: "DATA/images/tools.png",
+		title: "Info technique...",
+		id: "TOOLS-btn"
+	};
+	myToolsArray.push(newObj);
+	newObj = {
 		name: "SETTINGS",
 		image: "DATA/images/settings.png",
 		title: "Importez ou exportez les données du tournoi...",
@@ -187,11 +201,29 @@ function toolBarAction(loc) {
 				title: "Utilisation d'un projecteur...",
 				msge: "Pour l'instant la seule configuration qui marche bien, c'est Miroir et résolution de chaque écran à 1280 x 720.",
 				btn1: "Yes Boss !",
-				image: "DATA/images/info.png"
+				image: "DATA/images/projecteur.png"
 			}];
 			resetScore();
 			myMsgeBox(myData);
 			break;
+			
+		case "DOWNLOAD":
+			var myData = [{
+				type: "C",
+				title: "Télécharger cet outil...",
+				msge: "Voulez-vous télécharger cet outil pour l'utiliser hors ligne ?",
+				btn2: "Yes Boss !",
+				btn1: "Non merci",
+				image: "DATA/images/download.png"
+			}];
+			myMsgeBox(myData,handleDownload);
+			break;
+			
+		case "TOOLS":
+			aboutOutil();
+			break;
+			
+			
 		case "SETTINGS":
 			skipUFO = true;
 			$("#UFO-BUBBLE-CONTAINER").show();
@@ -316,4 +348,19 @@ function toolBarAction(loc) {
 		default:
 			break;
 	}
+}
+//=======================================
+function handleDownload(result) {
+		if (result === true) {
+		var zipUrl = 'DATA/Tournoi-Belote-v1.1.zip';
+      window.location.href = zipUrl;
+	} else {
+		//
+	}
+}
+//========================
+// Function to trigger download
+  function downloadFile(url) {
+        // Create a hidden link element
+       
 }

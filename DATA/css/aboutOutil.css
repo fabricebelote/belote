@@ -1,10 +1,10 @@
 /* Modal Container */
-.Auteur-modal {
+.Outil-modal {
 	position: fixed;
 	z-index: 99999;
 	left: 35%;
 	top: 15%;
-	width: 450px;
+	width: 550px;
 	/* Adjusted to fit content */
 	height: fit-content;
 	/* Adjusted to fit content */
@@ -16,7 +16,7 @@
 }
 
 /* Modal Content */
-.Auteur-content {
+.Outil-content {
 	display: relative;
 	background-color: #cccccc;
 	border: 1px solid #888;
@@ -30,7 +30,7 @@
 }
 
 /* Titre Container */
-.Auteur-titre-container {
+.Outil-titre-container {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -43,7 +43,7 @@
 	display: flex;
 }
 
-.Auteur-titre {
+.Outil-titre {
 	padding-left: 10px;
 	padding-bottom: 10px;
 	font-size: 20px;
@@ -55,73 +55,28 @@
 	/* Prevent wrapping */
 }
 
-.Auteur-container {
+.Outil-container {
 	margin-top: 15px;
 	margin-bottom: 10px;
+	overflow: scroll;
+	overflow-y: auto;
+	/* Show vertical scrollbar when needed */
+	overflow-x: hidden;
+	max-height: 300px;
+	height: fit-content;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
-/* Author Name */
-#Auteur-NOM {
-	font-size: 1.3em;
-	font-weight: bold;
-	color: #006625;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-	padding-bottom: 5px;
-}
-
-/* Author Email */
-#Auteur-EMAIL {
-	font-size: 1.2em;
-	color: #996600;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-
-}
-
-/* Text Container */
-.Auteur-text-container {
-	margin-top: 20px;
-}
-
-
- #Auteur-TEXT-3 {
-font-style: italic;
-font-size: 1em;
-}
-#Auteur-TEXT-1, #Auteur-TEXT-2, #Auteur-TEXT-3 {
-text-align: left;
-	color: #000000;
-	padding-bottom: 15px;
-}
-#Auteur-TEXT-1, #Auteur-TEXT-2 {
-font-size: 1.2em;
-}	
-.Auteur-IMG-container {
-	text-align: center;
-}
-
-.Auteur-image {
-	width: 50px;
-	height: 50px;
-	padding-bottom: 5px;
-}
-
-/* Date Section */
-#Auteur-DATE {
-	font-size: 1.2em;
-	color: #996600;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-	text-align: center;
-	padding-bottom: 5px;	
-}
 
 /* Buttons Container */
-.Auteur-btns-container {
+.Outil-btns-container {
 	display: flex;
 	justify-content: center;
 }
 
 /* Button */
-.Auteur-btn1 {
+.Outil-btn1 {
 	background-color: #007bff;
 	color: #fff;
 	border: none;

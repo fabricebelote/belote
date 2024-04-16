@@ -58,7 +58,7 @@ COMMON to the 3 modals
 	right: 0;
 	/* Adjusted to span the entire width */
 	height: 40px;
-	background-color: black;
+	background-color: #996633;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 	display: flex;

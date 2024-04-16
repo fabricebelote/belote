@@ -10,6 +10,7 @@
 	<link href="DATA/css/decoration.css" rel="stylesheet" type="text/css" />
 	<link href="DATA/css/myMsgeBox-base.css" rel="stylesheet" type="text/css" />
 	<link href="DATA/css/aboutAuteur.css" rel="stylesheet" type="text/css" />
+		<link href="DATA/css/aboutOutil.css" rel="stylesheet" type="text/css" />
 	<link href="DATA/css/tableauTables.css" rel="stylesheet" type="text/css" />
 	<link href="DATA/css/radiobuttons.css" rel="stylesheet" type="text/css" />
 	<link href="DATA/css/animations.css" rel="stylesheet" type="text/css" />
@@ -17,6 +18,7 @@
 	<script src="DATA/Scripts/jquery-3.7.1.min.js"></script>
 	<script src="DATA/Scripts/myMsgeBox.js"></script>
 	<script src="DATA/Scripts/aboutAuteur.js"></script>
+		<script src="DATA/Scripts/aboutOutil.js"></script>
 	<script src="DATA/Scripts/toolbar.js"></script>
 	<script src="DATA/Scripts/mathFunctions.js"></script>
 	<script src="DATA/Scripts/myFonctions.js"></script>
@@ -56,8 +58,8 @@
 		</div>
 		<div id="DEBUT-IMG-DIV-CONTAINER">
 			<div id="DEBUT-IMG-DIV">
-					<img id="DEBUT-1" src="DATA/images/test.png"/>
-						<!-- ==
+					<!-- ==<img id="DEBUT-1" src="DATA/images/test.png"/>
+						
 					<img id="DEBUT-2" src="DATA/images/amuse.png"/>
 					<img id="DEBUT-3" src="DATA/images/silence.png"/>
 					====-->
@@ -122,8 +124,7 @@
 				<div id="INTRO-1-TEXT">
 					<div class="INTRO-CONTAINER">
 					<h1>Passez en mode Plein Ecran immédiatement.</h1>
-					<h2>Appuyez sur la touche F11.</h2>
-					<h3>C'est fait pour ça !</h3>
+					<div><img style="padding-top: 15px" onclick="openFullscreen()" title="Cliquez ici ou pressez la touche clavier indiquée..." src="DATA/images/fullscreen.png"class="imageIntro" width="485px" height="140px"></div>
 					</div>
 				</div>
 				<div id="INTRO-2-TEXT">
@@ -141,6 +142,11 @@
 					</div>
 				</div>
 			</div>
+			<!--
+			<div id="INTRO-HOST">
+			<p>Hébergé gratuitement par <a href="https://googiehost.com/fr/" style="color:white" target="_blank">GoogieHost</a>.</p>
+			</div>
+			 -->
 			<div id="INTRO-BTNS">
 				<img id="TEST-TOURNOI" class="iconBtnImg80" src="DATA/images/test.png" onclick="startTestTournoi()" title="Faites un test" alt="Faites un test" />
 				<img class="iconBtnImg80" src="DATA/images/start.png" onclick="goToSection('INTRO-SECTION')" title="Continuez..." />
@@ -268,8 +274,8 @@
 				<div id="FIN-TEXT-CONTAINER">
 					<div id="FIN-TEXT">
 						<h2>Bravo ! Vous avez terminé le tournoi !</h2>
-						<h3>Cet outil est gratuit.</h3>
-						<h1>Partagez-le !</h1>
+						<h3>Cet outil est gratuit. Partagez-le !</h3>
+				<h2><img style="padding-top: 15px" title="Pressez la touche clavier indiquée pour sortir du mode Plein Ecran..." src="DATA/images/fullscreen.png" width="485px" height="140px"></h2>
 					</div>
 					<div id="FIN-SMILE">
 						<img src="DATA/images/test.png" onclick="smileAsk()" />
@@ -285,7 +291,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- ============================================ -->
 		<!-- ============================================ -->
 		<!-- SECTIONS   -->
 		<!-- ============================================  -->

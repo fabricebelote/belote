@@ -24,8 +24,7 @@ margin-right: auto;
 }
 #TABLEAU-HEADER-DIV-PROJ {
 	width: 400px;
-	height: 30px;
-	display: flex;
+	height: fit-content;
 	/* Use flexbox */
 	flex-direction: row;
 	/* Stack items vertically */

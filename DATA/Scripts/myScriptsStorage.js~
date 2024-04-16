@@ -142,9 +142,11 @@ function checkStorage() {
 //==========================================
 function XMLCOPYDATA() {
 	// Get the text field
-    var textarea = document.getElementById('XML-CONTENU-EXPORT');
-    textarea.select();
-    document.execCommand('copy');
+	var copyText = document.getElementById("XML-CONTENU-EXPORT");
+	// Select the text field
+	//copyText.select();
+	// Copy the text inside the text field
+	navigator.clipboard.writeText(copyText.value);
 }
 //==========================================
 function XMLPASTEDATA() {

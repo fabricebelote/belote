@@ -39,6 +39,9 @@ function loadApp() {
 	createStarsBox();
 	// Récupère les donnée en Local Storage
 	$("#ECRAN-CONTAINER").hide();
+	window.moveTo(0, 0);
+   window.resizeTo(screen.width, screen.height);
+           
 	checkTournoiExist();// et puis commence
 }
 
@@ -68,6 +71,9 @@ function goToSection(sectionName) {
 				introNum++;
 				$("#AUTEUR-btn").show();
 				$("#PROJECTEUR-btn").show();
+				$("#DOWNLOAD-btn").show();
+				$("#TOOLS-btn").show();
+				
 			}
 			break;
 		case 'INSCRIPTION-SECTION':
@@ -142,6 +148,25 @@ function goToSection(sectionName) {
 			break;
 	}
 }
+//===============================
+function openFullscreen() {
+        var elem = document.documentElement;
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+        } else {
+            // Fallback for browsers that do not support the Fullscreen API
+            // You can use an alternative method here, like maximizing the window size
+            window.moveTo(0, 0);
+            window.resizeTo(screen.width, screen.height);
+        }
+    }
+
 //===============================
 function reprendrePartie() {
 	// compte nbr equipes avec 0 score pour cette partie
@@ -447,5 +472,6 @@ function shuffleUFOArray(array) {
             array[j] = temp;
         }
         return array;
-    }
-  //============================================================  
+ }
+ //============================================================  
+ 
